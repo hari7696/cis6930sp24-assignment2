@@ -6,6 +6,7 @@ import pickle
 import re
 import logging
 
+
 logger = logging.getLogger(__name__)
 
 
@@ -104,14 +105,72 @@ def pdf_parser(pdf_stream):
 
         # there might be some junk rows which might not have all the fields, so removing them
         # sometimes, the address over flows and recorded as new row, so removing them, its assumed only two fields go missing at once
+        for item in lst_lines:
+            if len(item) < EXPECTED_MIN_FIELDS:
+                logger.debug("JUNK line {}".format(item))
         lst_lines = [item for item in lst_lines if len(item) >= EXPECTED_MIN_FIELDS]
     #lst_lines = lst_lines[:-NUMBER_END_JUNK_LINES]
     # creating the dataframe
     df = pd.DataFrame(lst_lines, columns=['incident_time', 'incident_number', 'incident_location', 'nature', 'incident_ori'])
     df['nature'] = df['nature'].apply(lambda x : '' if x is None else x )
+    logger.debug("lines {}".format(lst_lines[0]))
 
     logger.debug("Number of records in dataframe {}".format(len(df)))
 
     # df.to_csv('resources/temp.csv')
 
     return df
+
+def pickle_object(obj, file_path):
+
+    with open(file_path, 'wb') as file:
+        pickle.dump(obj, file)
+
+def unpickle_object(file_path):
+
+    with open(file_path, 'rb') as file:
+        obj = pickle.load(file)
+    return obj
+
+def get_coordinates(address, geolocator):
+    location = geolocator.geocode(address, timeout = 10)
+    if location is None:
+        logger.error("Location not found for address {}".format(address))
+    return (location.latitude, location.longitude)
+
+def determine_side_of_town(coord):
+
+    center_lat = 35.220833
+    center_lon = -97.443611
+    lat_diff = coord[0] - center_lat
+    lon_diff = coord[1] - center_lon
+
+    if lat_diff > 0:
+        if lon_diff > 0:
+            return 'NE'
+        elif lon_diff < 0:
+            return 'NW'
+        else:
+            return 'N'
+    elif lat_diff < 0:
+        if lon_diff > 0:
+            return 'SE'
+        elif lon_diff < 0:
+            return 'SW'
+        else:
+            return 'S'
+    else:
+        if lon_diff > 0:
+            return 'E'
+        elif lon_diff < 0:
+            return 'W'
+        else:
+            return 'Center'
+
+# Example usage:
+# latitude = 35.230833
+# longitude = -97.433611
+# side_of_town = determine_side_of_town(latitude, longitude)
+# print(f"The side of town is {side_of_town}.")
+
+
