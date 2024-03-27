@@ -1,0 +1,141 @@
+02/04/2024 22:48:36 - utilities - INFO - Downloaded the PDF file
+02/04/2024 22:48:36 - root - INFO - Downloaded the pdf file
+02/04/2024 22:48:36 - utilities - INFO - Read the pdf byte stream
+02/04/2024 22:48:36 - utilities - DEBUG - number of pages in the pdf 24
+02/04/2024 22:48:37 - utilities - DEBUG - Number of records in dataframe 404
+02/04/2024 22:48:37 - root - INFO - Parsed the pdf file
+02/04/2024 22:48:37 - db_components - DEBUG -  Database Absolute path C:\Users\ghari\Documents\MS\DE\cis6930sp24-assignment0
+02/04/2024 22:48:37 - db_components - DEBUG - resources folder exists
+02/04/2024 22:48:37 - db_components - DEBUG - Removed the existing db
+02/04/2024 22:48:37 - db_components - INFO - Created the db
+02/04/2024 22:48:37 - root - INFO - Created the database
+02/04/2024 22:48:37 - db_components - INFO - table creation successful
+02/04/2024 22:48:37 - root - INFO - Created the table
+02/04/2024 22:48:37 - db_components - DEBUG - columns names Index(['incident_time', 'incident_number', 'incident_location', 'nature',
+       'incident_ori'],
+      dtype='object')
+02/04/2024 22:48:37 - db_components - INFO - Populated the db
+02/04/2024 22:48:37 - root - INFO - Populated the database
+02/04/2024 22:48:37 - root - INFO - Query run successfully
+02/04/2024 22:48:37 - root - DEBUG - store string |1
+02/04/2024 22:48:37 - root - INFO - Closed the database connection
+02/04/2024 22:55:39 - utilities - INFO - Downloaded the PDF file
+02/04/2024 22:55:39 - root - INFO - Downloaded the pdf file
+02/04/2024 22:55:39 - utilities - INFO - Read the pdf byte stream
+02/04/2024 22:55:39 - utilities - DEBUG - number of pages in the pdf 24
+02/04/2024 22:55:40 - utilities - DEBUG - Number of records in dataframe 402
+02/04/2024 22:55:40 - root - INFO - Parsed the pdf file
+02/04/2024 22:55:40 - db_components - DEBUG -  Database Absolute path C:\Users\ghari\Documents\MS\DE\cis6930sp24-assignment0
+02/04/2024 22:55:40 - db_components - DEBUG - resources folder exists
+02/04/2024 22:55:40 - db_components - DEBUG - Removed the existing db
+02/04/2024 22:55:40 - db_components - INFO - Created the db
+02/04/2024 22:55:40 - root - INFO - Created the database
+02/04/2024 22:55:40 - db_components - INFO - table creation successful
+02/04/2024 22:55:40 - root - INFO - Created the table
+02/04/2024 22:55:40 - db_components - DEBUG - columns names Index(['incident_time', 'incident_number', 'incident_location', 'nature',
+       'incident_ori'],
+      dtype='object')
+02/04/2024 22:55:40 - db_components - INFO - Populated the db
+02/04/2024 22:55:40 - root - INFO - Populated the database
+02/04/2024 22:55:40 - root - INFO - Query run successfully
+02/04/2024 22:55:40 - root - INFO - Closed the database connection
+02/04/2024 22:56:44 - utilities - INFO - Downloaded the PDF file
+02/04/2024 22:56:44 - root - INFO - Downloaded the pdf file
+02/04/2024 22:56:44 - utilities - INFO - Read the pdf byte stream
+02/04/2024 22:56:44 - utilities - DEBUG - number of pages in the pdf 22
+02/04/2024 22:56:45 - utilities - DEBUG - Number of records in dataframe 357
+02/04/2024 22:56:45 - root - INFO - Parsed the pdf file
+02/04/2024 22:56:45 - db_components - DEBUG -  Database Absolute path C:\Users\ghari\Documents\MS\DE\cis6930sp24-assignment0
+02/04/2024 22:56:45 - db_components - DEBUG - resources folder exists
+02/04/2024 22:56:45 - db_components - DEBUG - Removed the existing db
+02/04/2024 22:56:45 - db_components - INFO - Created the db
+02/04/2024 22:56:45 - root - INFO - Created the database
+02/04/2024 22:56:45 - db_components - INFO - table creation successful
+02/04/2024 22:56:45 - root - INFO - Created the table
+02/04/2024 22:56:45 - db_components - DEBUG - columns names Index(['incident_time', 'incident_number', 'incident_location', 'nature',
+       'incident_ori'],
+      dtype='object')
+02/04/2024 22:56:45 - db_components - INFO - Populated the db
+02/04/2024 22:56:45 - root - INFO - Populated the database
+02/04/2024 22:56:45 - root - INFO - Query run successfully
+02/04/2024 22:56:45 - root - INFO - Closed the database connection
+02/04/2024 23:05:00 - utilities - INFO - Downloaded the PDF file
+02/04/2024 23:05:00 - root - INFO - Downloaded the pdf file
+02/04/2024 23:05:00 - utilities - INFO - Read the pdf byte stream
+02/04/2024 23:05:00 - utilities - DEBUG - number of pages in the pdf 20
+02/04/2024 23:05:01 - utilities - DEBUG - Number of records in dataframe 324
+02/04/2024 23:05:01 - root - INFO - Parsed the pdf file
+02/04/2024 23:05:01 - db_components - DEBUG -  Database Absolute path C:\Users\ghari\Documents\MS\DE\cis6930sp24-assignment0
+02/04/2024 23:05:01 - db_components - DEBUG - resources folder exists
+02/04/2024 23:05:01 - db_components - DEBUG - Removed the existing db
+02/04/2024 23:05:01 - db_components - INFO - Created the db
+02/04/2024 23:05:01 - root - INFO - Created the database
+02/04/2024 23:05:01 - db_components - INFO - table creation successful
+02/04/2024 23:05:01 - root - INFO - Created the table
+02/04/2024 23:05:01 - db_components - DEBUG - columns names Index(['incident_time', 'incident_number', 'incident_location', 'nature',
+       'incident_ori'],
+      dtype='object')
+02/04/2024 23:05:01 - db_components - INFO - Populated the db
+02/04/2024 23:05:01 - root - INFO - Populated the database
+02/04/2024 23:05:01 - root - INFO - Query run successfully
+02/04/2024 23:05:01 - root - INFO - Closed the database connection
+02/04/2024 23:05:59 - utilities - INFO - Downloaded the PDF file
+02/04/2024 23:05:59 - root - INFO - Downloaded the pdf file
+02/04/2024 23:05:59 - utilities - INFO - Read the pdf byte stream
+02/04/2024 23:05:59 - utilities - DEBUG - number of pages in the pdf 20
+02/04/2024 23:06:00 - utilities - DEBUG - Number of records in dataframe 325
+02/04/2024 23:06:00 - root - INFO - Parsed the pdf file
+02/04/2024 23:06:00 - db_components - DEBUG -  Database Absolute path C:\Users\ghari\Documents\MS\DE\cis6930sp24-assignment0
+02/04/2024 23:06:00 - db_components - DEBUG - resources folder exists
+02/04/2024 23:06:00 - db_components - DEBUG - Removed the existing db
+02/04/2024 23:06:00 - db_components - INFO - Created the db
+02/04/2024 23:06:00 - root - INFO - Created the database
+02/04/2024 23:06:00 - db_components - INFO - table creation successful
+02/04/2024 23:06:00 - root - INFO - Created the table
+02/04/2024 23:06:00 - db_components - DEBUG - columns names Index(['incident_time', 'incident_number', 'incident_location', 'nature',
+       'incident_ori'],
+      dtype='object')
+02/04/2024 23:06:00 - db_components - INFO - Populated the db
+02/04/2024 23:06:00 - root - INFO - Populated the database
+02/04/2024 23:06:00 - root - INFO - Query run successfully
+02/04/2024 23:06:00 - root - INFO - Closed the database connection
+02/04/2024 23:10:15 - utilities - INFO - Downloaded the PDF file
+02/04/2024 23:10:15 - root - INFO - Downloaded the pdf file
+02/04/2024 23:10:15 - utilities - INFO - Read the pdf byte stream
+02/04/2024 23:10:15 - utilities - DEBUG - number of pages in the pdf 20
+02/04/2024 23:10:16 - utilities - DEBUG - Number of records in dataframe 325
+02/04/2024 23:10:16 - root - INFO - Parsed the pdf file
+02/04/2024 23:10:16 - db_components - DEBUG -  Database Absolute path C:\Users\ghari\Documents\MS\DE\cis6930sp24-assignment0
+02/04/2024 23:10:16 - db_components - DEBUG - resources folder exists
+02/04/2024 23:10:16 - db_components - DEBUG - Removed the existing db
+02/04/2024 23:10:16 - db_components - INFO - Created the db
+02/04/2024 23:10:16 - root - INFO - Created the database
+02/04/2024 23:10:16 - db_components - INFO - table creation successful
+02/04/2024 23:10:16 - root - INFO - Created the table
+02/04/2024 23:10:16 - db_components - DEBUG - columns names Index(['incident_time', 'incident_number', 'incident_location', 'nature',
+       'incident_ori'],
+      dtype='object')
+02/04/2024 23:10:16 - db_components - INFO - Populated the db
+02/04/2024 23:10:16 - root - INFO - Populated the database
+02/04/2024 23:10:16 - root - INFO - Query run successfully
+02/04/2024 23:10:16 - root - INFO - Closed the database connection
+02/04/2024 23:10:49 - utilities - INFO - Downloaded the PDF file
+02/04/2024 23:10:49 - root - INFO - Downloaded the pdf file
+02/04/2024 23:10:49 - utilities - INFO - Read the pdf byte stream
+02/04/2024 23:10:49 - utilities - DEBUG - number of pages in the pdf 20
+02/04/2024 23:10:50 - utilities - DEBUG - Number of records in dataframe 325
+02/04/2024 23:10:50 - root - INFO - Parsed the pdf file
+02/04/2024 23:10:50 - db_components - DEBUG -  Database Absolute path C:\Users\ghari\Documents\MS\DE\cis6930sp24-assignment0
+02/04/2024 23:10:50 - db_components - DEBUG - resources folder exists
+02/04/2024 23:10:50 - db_components - DEBUG - Removed the existing db
+02/04/2024 23:10:50 - db_components - INFO - Created the db
+02/04/2024 23:10:50 - root - INFO - Created the database
+02/04/2024 23:10:50 - db_components - INFO - table creation successful
+02/04/2024 23:10:50 - root - INFO - Created the table
+02/04/2024 23:10:50 - db_components - DEBUG - columns names Index(['incident_time', 'incident_number', 'incident_location', 'nature',
+       'incident_ori'],
+      dtype='object')
+02/04/2024 23:10:50 - db_components - INFO - Populated the db
+02/04/2024 23:10:50 - root - INFO - Populated the database
+02/04/2024 23:10:50 - root - INFO - Query run successfully
+02/04/2024 23:10:50 - root - INFO - Closed the database connection
