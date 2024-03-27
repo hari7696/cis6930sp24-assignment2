@@ -24,3 +24,5 @@ __pycache__
 #text_files
 # *.txt
 # *.censored
+.ipynb_checkpoints/
+*.ipynb

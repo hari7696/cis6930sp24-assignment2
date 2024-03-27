@@ -1,4 +1,5 @@
 from utilities import *
+from field_extractor import *
 from db_components import *
 import argparse
 
@@ -21,6 +22,9 @@ def main(url):
 
     # parsing the pdf file
     df = pdf_parser(pdf_byte_stream)
+    df.to_pickle("tests/assignment0.pkl")
+    df_enhanced = extract_feilds(df)
+    df_enhanced.to_excel("tests/assignment0.xlsx")
     logging.info("Parsed the pdf file")
 
     # creating the database
@@ -45,6 +49,8 @@ def main(url):
     # printing the query results
     for row in query_output:
         print("|".join(map(str, row)))
+
+    
 # if row[0] == '':
 #     store_string = temp_string
 #     FLAG = True
@@ -67,7 +73,7 @@ if __name__ == "__main__":
         format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
         datefmt="%m/%d/%Y %H:%M:%S",
         filename="tests/assignment0.log",
-        filemode="a",
+        filemode="w",
     )
 
     parser = argparse.ArgumentParser()
