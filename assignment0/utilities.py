@@ -137,7 +137,7 @@ def get_coordinates(address, geolocator):
     if location is None:
         logger.error("Location not found for address {}".format(address))
         return ( -1000, -1000)
-    return (location.latitude, location.longitude)
+    return (round(location.latitude, 4), round(location.longitude, 4))
 
 def determine_side_of_town(coord):
 

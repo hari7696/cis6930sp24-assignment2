@@ -1,7 +1,9 @@
-04/02/2024 20:28:22 - utilities - INFO - Downloaded the PDF file
-04/02/2024 20:28:22 - root - INFO - Downloaded the pdf file
-04/02/2024 20:28:22 - utilities - INFO - Read the pdf byte stream
-04/02/2024 20:28:22 - utilities - DEBUG - number of pages in the pdf 20
-04/02/2024 20:28:23 - utilities - DEBUG - JUNK line ['', '3/2/2024 10:25']
-04/02/2024 20:28:23 - utilities - DEBUG - lines ['3/1/2024 0:05', '2024-00014834', '4TH/SUNNYLANE', 'MVA Non Injury', 'OK0140200']
-04/02/2024 20:28:23 - utilities - DEBUG - Number of records in dataframe 326
+04/03/2024 16:51:16 - utilities - INFO - Downloaded the PDF file
+04/03/2024 16:51:16 - root - INFO - Downloaded the pdf file
+04/03/2024 16:51:16 - utilities - INFO - Read the pdf byte stream
+04/03/2024 16:51:16 - utilities - DEBUG - number of pages in the pdf 20
+04/03/2024 16:51:16 - utilities - DEBUG - JUNK line ['', '3/2/2024 10:25']
+04/03/2024 16:51:16 - utilities - DEBUG - lines ['3/1/2024 0:05', '2024-00014834', '4TH/SUNNYLANE', 'MVA Non Injury', 'OK0140200']
+04/03/2024 16:51:16 - utilities - DEBUG - Number of records in dataframe 326
+04/03/2024 16:51:16 - urllib3.util.retry - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+04/03/2024 16:51:16 - urllib3.util.retry - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)

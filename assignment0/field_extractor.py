@@ -2,6 +2,11 @@ from geopy.geocoders import GoogleV3
 import pandas as pd
 from utilities import determine_side_of_town, unpickle_object, pickle_object, get_coordinates
 import os
+import openmeteo_requests
+import requests_cache
+import pandas as pd
+from retry_requests import retry
+from datetime import timedelta, datetime
 
 def day_of_week(df):
 
@@ -32,7 +37,7 @@ def location_rank(df):
     df['location_freq'] = df['incident_location'].apply(lambda x: dict_location_freq[x])
     df['Location Rank'] = df['location_freq'].rank( method = 'min' ,ascending = False)
 
-    print(df[df['incident_location'] == '901 N PORTER AVE'])
+    #print(df[df['incident_location'] == '901 N PORTER AVE'])
 
     return df
 
@@ -92,6 +97,83 @@ def emstat_flg(df):
 
     return df
 
+class WeatherInfo:
+
+    def __init__(self):
+
+        if os.path.exists('resources/weather.pkl'):
+            self.dict_weather = unpickle_object('resources/weather.pkl')
+        else:
+            self.dict_weather = {}
+
+
+    def get_weather_info(slef, coordinates, start_date, end_date):
+
+        cache_session = requests_cache.CachedSession('.cache', expire_after = -1)
+        retry_session = retry(cache_session, retries = 5, backoff_factor = 0.2)
+        openmeteo = openmeteo_requests.Client(session = retry_session)
+
+        url = "https://archive-api.open-meteo.com/v1/archive"
+        params = {
+            "latitude": coordinates[0],
+            "longitude": coordinates[1],
+            "start_date": start_date,
+            "end_date": end_date,
+            "hourly": "weather_code",
+            "timezone": "America/Chicago"
+        }
+        responses = openmeteo.weather_api(url, params=params)
+
+        # Process first location. Add a for-loop for multiple locations or weather models
+        response = responses[0]
+        # Process hourly data. The order of variables needs to be the same as requested.
+        hourly = response.Hourly()
+        hourly_weather_code = hourly.Variables(0).ValuesAsNumpy()
+
+        hourly_data = {"date": pd.date_range(
+            start = pd.to_datetime(hourly.Time(), unit = "s", utc = True),
+            end = pd.to_datetime(hourly.TimeEnd(), unit = "s", utc = True),
+            freq = pd.Timedelta(seconds = hourly.Interval()),
+            inclusive = "left"
+        )}
+        hourly_data["weather_code"] = hourly_weather_code
+        hourly_dataframe = pd.DataFrame(data = hourly_data).dropna()
+        hourly_dataframe['date'] = hourly_dataframe['date'].dt.strftime('%Y-%m-%d %H')
+
+        print(hourly_dataframe.shape, coordinates)
+
+        return hourly_dataframe
+
+    def get_weather_code(self, coordinates, timestamp):
+
+        if coordinates[0] == -1000:
+            return 'unkown'
+
+        min_date = timestamp - timedelta(days = 180)
+        max_date = datetime.now()
+        #timestamp = timestamp.strftime('%Y-%m-%d %H')
+        timestamp_str = timestamp.strftime('%Y-%m-%d %H')
+
+        min_date_str = min_date.strftime('%Y-%m-%d')
+        max_date_str = max_date.strftime('%Y-%m-%d')
+
+        key = "{}_{}".format(coordinates[0], coordinates[1])
+        
+    
+        if key in self.dict_weather:
+            temp_df = self.dict_weather[key]
+            weather_code = temp_df[temp_df['date'] == timestamp_str]['weather_code'].values[0]
+
+        else:
+            temp_df = self.get_weather_info(coordinates, min_date_str, max_date_str)
+            self.dict_weather[key] = temp_df
+            weather_code = temp_df[temp_df['date'] == timestamp_str]['weather_code'].values[0]
+
+        return weather_code    
+    
+    def save_weather_info(self):
+        pickle_object(self.dict_weather, 'resources/weather.pkl')
+
 
 
 def extract_feilds(df):
@@ -102,9 +184,6 @@ def extract_feilds(df):
     #time of the day extraction
     df = time_of_day(df)
 
-    #weather
-    
-
     #Location Rank
     df = location_rank(df)
 
@@ -112,7 +191,6 @@ def extract_feilds(df):
     # checking for coordinates file presence
     df = geo_codes(df)
     df['Side of Town'] = df['geocodes'].apply(lambda x: determine_side_of_town(x))
-    print("hi")
 
     # Incident rank - Nature field
     df = incident_rank(df)
@@ -121,6 +199,16 @@ def extract_feilds(df):
     df = emstat_flg(df)
     #This is a boolean value that is True in two cases. First, 
     #if the Incident ORI was EMSSTAT or if the subsequent record or two contain an EMSSTAT at the same time and locaton.
+
+    #weather codes
+    #df['incident_time_str'] = pd.to_datetime(df['incident_time']).dt.strftime('%Y-%m-%d %H')
+
+    weather_obj = WeatherInfo()
+    
+    df['incident_time'] = pd.to_datetime(df['incident_time'], format = '%m/%d/%Y %H:%M')
+    df['weather_code'] = df[['incident_time','geocodes']].apply(lambda x: weather_obj.get_weather_code(x['geocodes'], x['incident_time']), axis = 1)
+
+    weather_obj.save_weather_info()
 
     return df
 
