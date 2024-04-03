@@ -136,12 +136,17 @@ def get_coordinates(address, geolocator):
     location = geolocator.geocode(address, timeout = 10)
     if location is None:
         logger.error("Location not found for address {}".format(address))
+        return ( -1000, -1000)
     return (location.latitude, location.longitude)
 
 def determine_side_of_town(coord):
 
     center_lat = 35.220833
     center_lon = -97.443611
+
+    if coord[0] == -1000:
+        return 'Unknown'
+
     lat_diff = coord[0] - center_lat
     lon_diff = coord[1] - center_lon
 
