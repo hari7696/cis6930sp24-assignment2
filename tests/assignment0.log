@@ -1,16 +1,7 @@
-03/27/2024 15:33:54 - utilities - INFO - Downloaded the PDF file
-03/27/2024 15:33:54 - root - INFO - Downloaded the pdf file
-03/27/2024 15:33:54 - utilities - INFO - Read the pdf byte stream
-03/27/2024 15:33:54 - utilities - DEBUG - number of pages in the pdf 25
-03/27/2024 15:33:55 - utilities - DEBUG - JUNK line ['', '2/6/2024 10:25']
-03/27/2024 15:33:55 - utilities - DEBUG - lines ['2/5/2024 0:14', '2024-00008312', 'N PORTER AVE / E FRANK ST', 'Traffic Stop', 'OK0140200']
-03/27/2024 15:33:55 - utilities - DEBUG - Number of records in dataframe 410
-03/27/2024 15:33:55 - geopy - DEBUG - GoogleV3.geocode: https://maps.googleapis.com/maps/api/geocode/json?sensor=false&address=N+PORTER+AVE+%2F+E+FRANK+ST&key=***REMOVED***
-03/27/2024 15:33:55 - geopy - DEBUG - GoogleV3.geocode: https://maps.googleapis.com/maps/api/geocode/json?sensor=false&address=300+E+BOYD+ST&key=***REMOVED***
-03/27/2024 15:33:55 - geopy - DEBUG - GoogleV3.geocode: https://maps.googleapis.com/maps/api/geocode/json?sensor=false&address=328+E+ROBINSON+ST&key=***REMOVED***
-03/27/2024 15:33:55 - geopy - DEBUG - GoogleV3.geocode: https://maps.googleapis.com/maps/api/geocode/json?sensor=false&address=1900+RENAISSANCE+DR&key=***REMOVED***
-03/27/2024 15:33:55 - geopy - DEBUG - GoogleV3.geocode: https://maps.googleapis.com/maps/api/geocode/json?sensor=false&address=2424+W+MAIN+ST&key=***REMOVED***
-03/27/2024 15:33:56 - geopy - DEBUG - GoogleV3.geocode: https://maps.googleapis.com/maps/api/geocode/json?sensor=false&address=1000+E+LINDSEY+ST&key=***REMOVED***
-03/27/2024 15:33:56 - geopy - DEBUG - GoogleV3.geocode: https://maps.googleapis.com/maps/api/geocode/json?sensor=false&address=201+REED+AVE&key=***REMOVED***
-03/27/2024 15:33:56 - geopy - DEBUG - GoogleV3.geocode: https://maps.googleapis.com/maps/api/geocode/json?sensor=false&address=2681+JEFFERSON+ST&key=***REMOVED***
-03/27/2024 15:33:56 - utilities - ERROR - Location not found for address 2681 JEFFERSON ST
+04/02/2024 20:28:22 - utilities - INFO - Downloaded the PDF file
+04/02/2024 20:28:22 - root - INFO - Downloaded the pdf file
+04/02/2024 20:28:22 - utilities - INFO - Read the pdf byte stream
+04/02/2024 20:28:22 - utilities - DEBUG - number of pages in the pdf 20
+04/02/2024 20:28:23 - utilities - DEBUG - JUNK line ['', '3/2/2024 10:25']
+04/02/2024 20:28:23 - utilities - DEBUG - lines ['3/1/2024 0:05', '2024-00014834', '4TH/SUNNYLANE', 'MVA Non Injury', 'OK0140200']
+04/02/2024 20:28:23 - utilities - DEBUG - Number of records in dataframe 326

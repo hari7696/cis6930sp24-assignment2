@@ -24,31 +24,31 @@ def main(url):
     df = pdf_parser(pdf_byte_stream)
     df.to_pickle("tests/assignment0.pkl")
     df_enhanced = extract_feilds(df)
-    df_enhanced.to_excel("tests/assignment0.xlsx")
-    logging.info("Parsed the pdf file")
+    df_enhanced.to_csv("tests/assignment0.csv", index = False)
+    # logging.info("Parsed the pdf file")
 
-    # creating the database
-    conn = createdb()
-    logging.info("Created the database")
+    # # creating the database
+    # conn = createdb()
+    # logging.info("Created the database")
 
-    create_table(conn)
-    logging.info("Created the table")
+    # create_table(conn)
+    # logging.info("Created the table")
 
-    # populating the database
-    populate_db(conn, df)
-    logging.info("Populated the database")
-    conn.commit()
+    # # populating the database
+    # populate_db(conn, df)
+    # logging.info("Populated the database")
+    # conn.commit()
 
-    # querying db
-    query = """SELECT nature, count(*) as num_incidents FROM incidents GROUP BY nature ORDER BY num_incidents DESC, nature NULLS first"""
+    # # querying db
+    # query = """SELECT nature, count(*) as num_incidents FROM incidents GROUP BY nature ORDER BY num_incidents DESC, nature NULLS first"""
 
-    query_output = query_db(conn, query)
-    logging.info("Query run successfully")
+    # query_output = query_db(conn, query)
+    # logging.info("Query run successfully")
 
-    FLAG =False
-    # printing the query results
-    for row in query_output:
-        print("|".join(map(str, row)))
+    # FLAG =False
+    # # printing the query results
+    # for row in query_output:
+    #     print("|".join(map(str, row)))
 
     
 # if row[0] == '':
@@ -60,8 +60,8 @@ def main(url):
     # if FLAG:
     #     print(store_string)
     #     logging.debug("store string {}".format(store_string))
-    conn.close()
-    logging.info("Closed the database connection")
+    # conn.close()
+    # logging.info("Closed the database connection")
 
 
 if __name__ == "__main__":
@@ -84,3 +84,6 @@ if __name__ == "__main__":
     args = parser.parse_args()
     if args.incidents:
         main(args.incidents)
+
+
+# run command: pipenv run python assignment0/main.py --incidents "https://www.normanok.gov/sites/default/files/documents/2024-03/2024-03-01_daily_incident_summary.pdf"
