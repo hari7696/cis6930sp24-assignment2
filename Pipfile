@@ -12,6 +12,7 @@ geopy = "*"
 openmeteo-requests = "*"
 requests-cache = "*"
 retry-requests = "*"
+tqdm = "*"
 
 [dev-packages]
 
