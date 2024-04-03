@@ -9,6 +9,9 @@ pypdf = "*"
 pytest = "*"
 numpy = "*"
 geopy = "*"
+openmeteo-requests = "*"
+requests-cache = "*"
+retry-requests = "*"
 
 [dev-packages]
 
