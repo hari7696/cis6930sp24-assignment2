@@ -1,9 +1,9 @@
 # cis6930sp24-assignment2
 Day of the Week	 - good
 Time of Day - good
-Weather	- 
+Weather	- good
 Location Rank - good
-Side of Town
+Side of Town - good
 Incident Rank - good
 Nature - good
 EMSSTAT - good

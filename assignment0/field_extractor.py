@@ -197,17 +197,12 @@ def extract_feilds(df):
 
     #EMSSTAT flg
     df = emstat_flg(df)
-    #This is a boolean value that is True in two cases. First, 
-    #if the Incident ORI was EMSSTAT or if the subsequent record or two contain an EMSSTAT at the same time and locaton.
 
     #weather codes
-    #df['incident_time_str'] = pd.to_datetime(df['incident_time']).dt.strftime('%Y-%m-%d %H')
 
     weather_obj = WeatherInfo()
-    
     df['incident_time'] = pd.to_datetime(df['incident_time'], format = '%m/%d/%Y %H:%M')
     df['weather_code'] = df[['incident_time','geocodes']].apply(lambda x: weather_obj.get_weather_code(x['geocodes'], x['incident_time']), axis = 1)
-
     weather_obj.save_weather_info()
 
     return df
