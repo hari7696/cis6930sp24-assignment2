@@ -1,0 +1,698 @@
+Day of the Week,Time of Day,Weather,Location Rank,Side of Town,Incident Rank,Nature,EMSSTAT
+6,0,unkown,138.0,Unknown,214.0,MVA Non Injury,False
+6,0,3.0,138.0,NE,1.0,Traffic Stop,False
+6,0,3.0,138.0,SE,76.0,Disturbance/Domestic,False
+6,0,3.0,138.0,SE,1.0,Traffic Stop,False
+6,0,3.0,138.0,SE,1.0,Traffic Stop,False
+6,0,3.0,138.0,SE,42.0,Transfer/Interfacility,True
+6,0,3.0,138.0,NW,1.0,Traffic Stop,False
+6,1,0.0,138.0,NE,310.0,Fire Smoke Investigation,False
+6,1,2.0,138.0,SW,1.0,Traffic Stop,False
+6,1,2.0,138.0,NW,1.0,Traffic Stop,False
+6,1,3.0,138.0,SW,1.0,Traffic Stop,False
+6,1,3.0,138.0,SE,1.0,Traffic Stop,False
+6,1,2.0,138.0,SW,1.0,Traffic Stop,False
+6,1,2.0,138.0,NW,1.0,Traffic Stop,False
+6,1,3.0,138.0,SE,117.0,Trespassing,False
+6,1,1.0,138.0,SW,1.0,Traffic Stop,False
+6,1,3.0,62.0,SE,76.0,Welfare Check,False
+6,1,63.0,62.0,SE,214.0,Unconscious/Fainting,True
+6,1,63.0,62.0,SE,61.0,Falls,True
+6,1,3.0,138.0,SE,1.0,Traffic Stop,False
+6,1,2.0,16.0,NW,117.0,Trespassing,False
+6,1,0.0,138.0,NW,1.0,Traffic Stop,False
+6,2,71.0,44.0,NW,152.0,Alarm,False
+6,2,2.0,44.0,SE,117.0,Trespassing,False
+6,2,2.0,138.0,SE,273.0,Alarm Holdup/Panic,False
+6,2,0.0,28.0,SW,162.0,Sick Person,True
+6,2,0.0,28.0,SW,162.0,Sick Person,True
+6,2,0.0,28.0,SW,229.0,Public Intoxication,True
+6,2,0.0,28.0,SW,229.0,Public Intoxication,True
+6,3,2.0,138.0,SW,229.0,Public Assist,False
+6,3,0.0,138.0,NE,162.0,Larceny,False
+6,3,2.0,28.0,SE,162.0,Sick Person,True
+6,3,2.0,28.0,SE,162.0,Sick Person,True
+6,3,3.0,138.0,NW,117.0,Trespassing,False
+6,3,2.0,138.0,SE,152.0,Alarm,False
+6,4,1.0,16.0,NW,42.0,Transfer/Interfacility,True
+6,4,3.0,138.0,SE,273.0,Chest Pain,True
+6,4,71.0,44.0,NW,214.0,Burglary,False
+6,4,1.0,138.0,NE,229.0,Harassment / Threats Report,False
+6,4,51.0,138.0,SE,152.0,Alarm,False
+6,5,1.0,138.0,SE,117.0,Trespassing,False
+6,5,0.0,62.0,SW,288.0,Allergies/Envenomations,True
+6,5,0.0,62.0,SW,288.0,Allergies/Envenomations,True
+6,5,0.0,138.0,SE,288.0,Noise Complaint,False
+6,5,0.0,62.0,NE,214.0,MVA Non Injury,False
+6,5,0.0,62.0,NE,188.0,Supplement Report,False
+6,5,0.0,62.0,NE,229.0,Public Assist,False
+6,6,0.0,138.0,SW,310.0,Found Item,False
+6,6,3.0,138.0,NE,229.0,Fraud,False
+6,7,73.0,44.0,NW,42.0,Transfer/Interfacility,True
+6,7,1.0,138.0,SE,214.0,Burglary,False
+6,7,1.0,138.0,NW,229.0,Public Assist,False
+6,7,0.0,138.0,NE,76.0,Welfare Check,False
+6,7,0.0,138.0,SE,310.0,Assault,False
+6,7,1.0,62.0,SE,214.0,Unconscious/Fainting,True
+6,7,1.0,62.0,SE,214.0,Unconscious/Fainting,True
+6,7,0.0,138.0,NW,76.0,Welfare Check,False
+6,7,0.0,138.0,NE,76.0,Welfare Check,False
+6,7,0.0,138.0,SW,229.0,Public Assist,False
+6,7,0.0,138.0,NW,1.0,Traffic Stop,False
+6,7,unkown,138.0,Unknown,162.0,Larceny,False
+6,7,0.0,138.0,NW,202.0,Stand By EMS,True
+6,7,0.0,138.0,NE,152.0,Alarm,False
+6,8,unkown,138.0,Unknown,76.0,Welfare Check,False
+6,8,51.0,62.0,SW,104.0,Contact a Subject,False
+6,8,1.0,138.0,SW,229.0,Fraud,False
+6,8,0.0,138.0,SE,310.0,Animal Livestock,False
+6,8,3.0,138.0,SW,229.0,Follow Up,False
+6,8,1.0,138.0,SE,214.0,Burglary,False
+6,8,75.0,62.0,NW,202.0,Animal Trapped,False
+6,8,1.0,138.0,NW,188.0,Supplement Report,False
+6,8,1.0,138.0,NE,188.0,Supplement Report,False
+6,8,1.0,138.0,SW,104.0,Contact a Subject,False
+6,8,1.0,62.0,NE,310.0,Extra Patrol,False
+6,8,75.0,138.0,NW,229.0,Harassment / Threats Report,False
+6,8,75.0,62.0,NW,202.0,Animal Trapped,False
+6,9,0.0,138.0,SW,229.0,Parking Problem,False
+6,9,0.0,1.0,NE,42.0,Transfer/Interfacility,True
+6,9,71.0,44.0,NW,188.0,Supplement Report,False
+6,9,unkown,62.0,Unknown,229.0,Runaway or Lost Child,False
+6,9,0.0,1.0,NE,42.0,Transfer/Interfacility,True
+6,9,51.0,138.0,SE,141.0,Suspicious,False
+6,9,0.0,138.0,NW,273.0,Motorist Assist,False
+6,9,unkown,138.0,Unknown,188.0,Supplement Report,False
+6,9,0.0,138.0,SE,104.0,Contact a Subject,False
+6,9,0.0,44.0,SE,288.0,Open Door/Premises Check,False
+6,9,0.0,138.0,NW,117.0,Fire Alarm,False
+6,9,0.0,138.0,NW,152.0,Alarm,False
+6,9,0.0,44.0,NE,117.0,Trespassing,False
+6,10,0.0,138.0,SE,310.0,Vandalism,False
+6,10,0.0,62.0,SE,273.0,Chest Pain,True
+6,10,0.0,62.0,SE,273.0,Chest Pain,True
+6,10,0.0,28.0,SE,229.0,Heart Problems/AICD,True
+6,10,0.0,28.0,SE,229.0,Heart Problems/AICD,True
+6,10,0.0,138.0,SE,229.0,Parking Problem,False
+6,10,0.0,62.0,NE,229.0,Headache,True
+6,10,0.0,62.0,NE,229.0,Headache,True
+6,10,0.0,62.0,SW,188.0,Supplement Report,False
+6,10,3.0,62.0,SE,288.0,Breathing Problems,True
+6,10,3.0,62.0,SE,288.0,Breathing Problems,True
+6,10,0.0,138.0,SW,214.0,MVA Non Injury,False
+6,10,0.0,138.0,SW,202.0,Stand By EMS,True
+6,10,0.0,62.0,NE,229.0,Follow Up,False
+6,10,0.0,62.0,NE,288.0,Mutual Aid,False
+6,10,0.0,138.0,NE,117.0,Fire Alarm,False
+6,10,51.0,138.0,SE,141.0,Suspicious,False
+6,10,2.0,62.0,SW,61.0,Falls,True
+6,10,2.0,62.0,SW,61.0,Falls,True
+6,10,0.0,138.0,NE,141.0,Suspicious,False
+6,10,0.0,138.0,NW,229.0,Fraud,False
+6,10,0.0,138.0,SW,104.0,Contact a Subject,False
+6,10,0.0,138.0,NE,229.0,Animal at Large,False
+6,10,0.0,138.0,NE,310.0,Animal Dead,False
+6,11,3.0,138.0,SW,229.0,Animal Injured,False
+6,11,unkown,138.0,Unknown,188.0,Check Area,False
+6,11,unkown,138.0,Unknown,162.0,Larceny,False
+6,11,0.0,138.0,SE,1.0,Traffic Stop,False
+6,11,51.0,138.0,NW,76.0,Disturbance/Domestic,False
+6,11,0.0,138.0,SE,229.0,Animal at Large,False
+6,11,0.0,138.0,NW,141.0,Suspicious,False
+6,11,0.0,138.0,SW,202.0,Animal Trapped,False
+6,11,0.0,1.0,NE,42.0,Transfer/Interfacility,True
+6,11,0.0,138.0,NE,202.0,Stand By EMS,True
+6,11,51.0,138.0,SE,104.0,Contact a Subject,False
+6,11,0.0,16.0,NW,117.0,Fire Alarm,False
+6,12,3.0,138.0,NW,76.0,Disturbance/Domestic,False
+6,12,0.0,62.0,SW,61.0,Falls,True
+6,12,0.0,62.0,SW,61.0,Falls,True
+6,12,0.0,138.0,SE,229.0,Animal at Large,False
+6,12,0.0,138.0,SE,202.0,Stand By EMS,True
+6,12,0.0,1.0,NE,42.0,Transfer/Interfacility,True
+6,12,53.0,138.0,SE,202.0,Animal Trapped,False
+6,12,73.0,138.0,NE,117.0,Fire Alarm,False
+6,12,0.0,62.0,NE,229.0,Animal at Large,False
+6,12,0.0,62.0,SE,141.0,Suspicious,False
+6,12,unkown,138.0,Unknown,273.0,Motorist Assist,False
+6,12,2.0,62.0,NE,288.0,Fire Residential,True
+6,12,2.0,62.0,NE,288.0,Fire Residential,True
+6,12,0.0,62.0,NE,229.0,Headache,True
+6,12,0.0,62.0,NE,229.0,Headache,True
+6,12,unkown,138.0,Unknown,188.0,Check Area,False
+6,12,unkown,62.0,Unknown,76.0,Disturbance/Domestic,False
+6,12,unkown,62.0,Unknown,76.0,Disturbance/Domestic,False
+6,12,unkown,62.0,Unknown,61.0,Falls,True
+6,12,unkown,62.0,Unknown,61.0,Falls,True
+6,13,0.0,44.0,SE,117.0,Trespassing,False
+6,13,unkown,138.0,Unknown,273.0,Animal Complaint,False
+6,13,0.0,138.0,NE,104.0,Contact a Subject,False
+6,13,0.0,138.0,NW,162.0,Larceny,False
+6,13,0.0,138.0,SE,1.0,Traffic Stop,False
+6,13,2.0,44.0,NW,288.0,Overdose/Poisoning,True
+6,13,2.0,44.0,NW,288.0,Overdose/Poisoning,True
+6,13,0.0,62.0,SE,310.0,Missing Person,False
+6,13,0.0,138.0,NW,76.0,Welfare Check,False
+6,13,0.0,138.0,NE,76.0,Welfare Check,False
+6,13,0.0,138.0,NW,1.0,Traffic Stop,False
+6,13,0.0,62.0,NW,162.0,Larceny,False
+6,13,1.0,138.0,SE,1.0,Traffic Stop,False
+6,13,73.0,138.0,SE,288.0,COP DDACTS,False
+6,13,0.0,138.0,SE,214.0,Burglary,False
+6,13,0.0,62.0,NE,117.0,Fire Alarm,False
+6,13,0.0,1.0,NE,42.0,Transfer/Interfacility,True
+6,13,0.0,62.0,NE,117.0,Fire Alarm,False
+6,13,1.0,138.0,SE,76.0,Welfare Check,False
+6,13,1.0,138.0,SE,288.0,COP DDACTS,False
+6,13,0.0,62.0,SE,117.0,Trespassing,False
+6,13,0.0,138.0,NE,229.0,Parking Problem,False
+6,13,0.0,62.0,NW,162.0,Larceny,False
+6,13,0.0,62.0,SE,288.0,Hemorrhage/Lacerations,True
+6,13,0.0,62.0,SE,288.0,Hemorrhage/Lacerations,True
+6,13,0.0,138.0,NW,288.0,Mutual Aid,False
+6,13,0.0,138.0,SE,104.0,Contact a Subject,False
+6,13,51.0,138.0,NW,229.0,Public Intoxication,False
+6,14,0.0,138.0,NE,1.0,Traffic Stop,False
+6,14,unkown,138.0,Unknown,188.0,Check Area,False
+6,14,1.0,138.0,SW,42.0,Transfer/Interfacility,True
+6,14,1.0,138.0,SE,1.0,Traffic Stop,False
+6,14,1.0,138.0,SE,310.0,COP Problem Solving,False
+6,14,1.0,138.0,SE,1.0,Traffic Stop,False
+6,14,1.0,62.0,SE,61.0,Falls,True
+6,14,1.0,62.0,SE,61.0,Falls,True
+6,14,1.0,138.0,SE,104.0,Contact a Subject,False
+6,14,0.0,1.0,NE,42.0,Transfer/Interfacility,True
+6,14,0.0,138.0,NW,117.0,Fire Alarm,False
+6,14,53.0,138.0,NE,229.0,Animal Injured,False
+6,14,0.0,62.0,NW,310.0,Fight,False
+6,14,unkown,138.0,Unknown,310.0,Animal Vicious,False
+6,14,1.0,44.0,SE,180.0,MVA With Injuries,True
+6,14,1.0,44.0,SE,180.0,MVA With Injuries,True
+6,14,1.0,44.0,SE,214.0,MVA Non Injury,True
+6,14,1.0,138.0,SW,229.0,Parking Problem,False
+6,14,0.0,62.0,NW,162.0,Larceny,False
+6,15,1.0,138.0,SE,76.0,Welfare Check,False
+6,15,0.0,138.0,SE,202.0,Animal Trapped,False
+6,15,1.0,138.0,SE,273.0,Animal Complaint,False
+6,15,0.0,138.0,NE,76.0,Welfare Check,False
+6,15,3.0,16.0,NW,42.0,Transfer/Interfacility,True
+6,15,unkown,138.0,Unknown,141.0,Suspicious,False
+6,15,3.0,16.0,NW,42.0,Transfer/Interfacility,True
+6,15,1.0,138.0,SE,229.0,Runaway or Lost Child,False
+6,15,0.0,138.0,NE,229.0,Harassment / Threats Report,False
+6,15,0.0,138.0,SW,273.0,Hit and Run,False
+6,15,3.0,44.0,NE,76.0,Disturbance/Domestic,False
+6,15,3.0,138.0,NE,229.0,Animal Injured,False
+6,15,0.0,62.0,NE,202.0,Stand By EMS,True
+6,15,1.0,138.0,SW,188.0,Check Area,False
+6,15,3.0,62.0,NE,229.0,Follow Up,False
+6,15,3.0,62.0,NE,310.0,Stroke,True
+6,15,3.0,62.0,NE,162.0,Sick Person,True
+6,16,0.0,62.0,SW,214.0,Unconscious/Fainting,True
+6,16,0.0,62.0,SW,214.0,Unconscious/Fainting,True
+6,16,0.0,138.0,NE,141.0,Suspicious,False
+6,16,0.0,62.0,SE,152.0,Alarm,False
+6,16,0.0,138.0,NE,202.0,Animal Trapped,False
+6,16,0.0,62.0,NW,310.0,COP Relationships,False
+6,16,unkown,138.0,Unknown,104.0,Contact a Subject,False
+6,16,unkown,138.0,Unknown,1.0,Traffic Stop,False
+6,16,0.0,62.0,NE,104.0,Contact a Subject,False
+6,16,0.0,138.0,SE,214.0,MVA Non Injury,False
+6,16,1.0,62.0,SE,61.0,Falls,True
+6,16,1.0,62.0,SE,61.0,Falls,True
+6,16,0.0,138.0,NE,1.0,Traffic Stop,False
+6,16,0.0,44.0,NE,117.0,Trespassing,False
+6,16,0.0,28.0,SE,61.0,Falls,True
+6,16,0.0,28.0,SE,61.0,Falls,True
+6,16,0.0,138.0,SW,288.0,Open Door/Premises Check,False
+6,16,0.0,28.0,SE,61.0,Falls,True
+6,16,0.0,28.0,SE,61.0,Falls,True
+6,17,51.0,138.0,NE,162.0,Larceny,False
+6,17,0.0,138.0,NE,76.0,Disturbance/Domestic,False
+6,17,3.0,138.0,SE,273.0,Animal Complaint,False
+6,17,51.0,138.0,SW,1.0,Traffic Stop,False
+6,17,unkown,138.0,Unknown,229.0,Fraud,False
+6,17,unkown,62.0,Unknown,104.0,Contact a Subject,False
+6,17,unkown,138.0,Unknown,273.0,Hit and Run,False
+6,17,0.0,62.0,SW,188.0,Supplement Report,False
+6,17,0.0,62.0,SE,188.0,Check Area,False
+6,17,51.0,62.0,SW,1.0,Traffic Stop,False
+6,17,1.0,138.0,SE,117.0,Trespassing,False
+6,17,0.0,138.0,NW,1.0,Traffic Stop,False
+6,17,unkown,138.0,Unknown,1.0,Traffic Stop,False
+6,17,0.0,1.0,NE,42.0,Transfer/Interfacility,True
+6,17,0.0,138.0,SW,162.0,Larceny,False
+6,17,0.0,138.0,NE,117.0,Trespassing,False
+6,17,51.0,138.0,SE,104.0,Contact a Subject,False
+6,17,0.0,1.0,NE,310.0,Escort/Transport,False
+6,17,0.0,138.0,NE,229.0,Harassment / Threats Report,False
+6,17,0.0,138.0,NE,1.0,Traffic Stop,False
+6,18,0.0,138.0,SW,1.0,Traffic Stop,False
+6,18,0.0,138.0,SE,76.0,Welfare Check,False
+6,18,0.0,1.0,NE,76.0,Welfare Check,False
+6,18,0.0,138.0,NE,1.0,Traffic Stop,False
+6,18,unkown,138.0,Unknown,1.0,Traffic Stop,False
+6,18,0.0,138.0,NW,273.0,Hit and Run,False
+6,18,unkown,138.0,Unknown,152.0,Alarm,False
+6,18,0.0,138.0,NW,117.0,Fire Alarm,False
+6,18,0.0,62.0,SE,162.0,Sick Person,True
+6,18,0.0,62.0,SE,162.0,Sick Person,True
+6,18,0.0,138.0,NE,273.0,Alarm Holdup/Panic,False
+6,18,0.0,138.0,NE,229.0,Runaway or Lost Child,False
+6,18,1.0,138.0,NE,1.0,Traffic Stop,False
+6,18,0.0,62.0,NW,288.0,Convulsion/Seizure,True
+6,18,0.0,62.0,NW,288.0,Convulsion/Seizure,True
+6,18,0.0,138.0,NW,141.0,Suspicious,False
+6,19,unkown,16.0,Unknown,180.0,MVA With Injuries,True
+6,19,unkown,16.0,Unknown,180.0,MVA With Injuries,True
+6,19,unkown,16.0,Unknown,180.0,MVA With Injuries,True
+6,19,unkown,16.0,Unknown,180.0,MVA With Injuries,True
+6,19,unkown,16.0,Unknown,180.0,MVA With Injuries,True
+6,19,unkown,16.0,Unknown,180.0,MVA With Injuries,True
+6,19,2.0,138.0,SE,229.0,Follow Up,False
+6,19,1.0,138.0,NE,76.0,Disturbance/Domestic,False
+6,19,1.0,138.0,SW,117.0,Fire Alarm,False
+6,19,2.0,62.0,NE,273.0,Alarm Holdup/Panic,False
+6,19,0.0,1.0,NE,188.0,Check Area,False
+6,19,2.0,62.0,NE,229.0,Public Intoxication,False
+6,20,0.0,138.0,SE,76.0,Disturbance/Domestic,False
+6,20,1.0,138.0,NE,288.0,Noise Complaint,False
+6,20,0.0,62.0,NW,229.0,Heart Problems/AICD,True
+6,20,0.0,62.0,NW,229.0,Heart Problems/AICD,True
+6,20,0.0,138.0,SE,117.0,Fire Alarm,False
+6,20,0.0,62.0,NE,76.0,Disturbance/Domestic,False
+6,20,0.0,1.0,NE,42.0,Transfer/Interfacility,True
+6,20,unkown,138.0,Unknown,152.0,Alarm,False
+6,20,0.0,138.0,SE,76.0,Welfare Check,False
+6,21,0.0,1.0,NE,42.0,Transfer/Interfacility,True
+6,21,1.0,62.0,NE,202.0,Stand By EMS,True
+6,21,0.0,138.0,NW,42.0,Transfer/Interfacility,True
+6,21,unkown,138.0,Unknown,117.0,Trespassing,False
+6,21,0.0,28.0,NW,162.0,Sick Person,True
+6,21,0.0,28.0,NW,162.0,Sick Person,True
+6,21,51.0,138.0,NW,117.0,Fire Alarm,False
+6,21,unkown,138.0,Unknown,76.0,Disturbance/Domestic,False
+6,21,0.0,1.0,NE,42.0,Transfer/Interfacility,True
+6,21,0.0,138.0,NW,310.0,Road Rage,False
+6,22,0.0,138.0,SW,1.0,Traffic Stop,False
+6,22,0.0,138.0,SE,229.0,Animal Injured,False
+6,22,0.0,138.0,SW,1.0,Traffic Stop,False
+6,22,0.0,1.0,NE,42.0,Transfer/Interfacility,True
+6,22,1.0,138.0,NE,152.0,Alarm,False
+6,22,unkown,138.0,Unknown,310.0,Drunk Driver,False
+6,22,0.0,28.0,NW,76.0,Welfare Check,False
+6,22,0.0,138.0,SE,104.0,Contact a Subject,False
+6,22,0.0,138.0,SW,141.0,Suspicious,False
+6,22,0.0,138.0,SE,1.0,Traffic Stop,False
+6,22,2.0,138.0,SE,229.0,Runaway or Lost Child,False
+6,22,unkown,138.0,Unknown,1.0,Traffic Stop,False
+6,23,0.0,138.0,NW,1.0,Traffic Stop,False
+6,23,0.0,138.0,SE,1.0,Traffic Stop,False
+6,23,unkown,138.0,Unknown,1.0,Traffic Stop,False
+6,23,1.0,138.0,NE,188.0,Check Area,False
+6,23,0.0,138.0,NW,1.0,Traffic Stop,False
+6,23,0.0,62.0,NW,76.0,Disturbance/Domestic,False
+6,23,0.0,138.0,SE,273.0,Motorist Assist,False
+6,23,0.0,138.0,NW,76.0,Disturbance/Domestic,False
+6,23,0.0,138.0,SE,310.0,Loud Party,False
+6,23,1.0,44.0,NE,288.0,Assault EMS Needed,True
+6,23,1.0,44.0,NE,288.0,Assault EMS Needed,True
+6,23,1.0,44.0,NE,76.0,Disturbance/Domestic,True
+6,23,3.0,138.0,NE,117.0,Fire Alarm,False
+6,23,0.0,1.0,NE,141.0,Suspicious,False
+6,23,0.0,28.0,NW,214.0,Burglary,False
+6,23,0.0,138.0,SW,1.0,Traffic Stop,False
+6,23,0.0,138.0,NE,141.0,Suspicious,False
+6,23,0.0,138.0,SW,152.0,Alarm,False
+6,23,0.0,16.0,NW,42.0,Transfer/Interfacility,True
+7,0,71.0,90.0,NW,141.0,Contact a Subject,False
+7,0,unkown,190.0,Unknown,168.0,Larceny,False
+7,0,0.0,36.0,SE,125.0,Unconscious/Fainting,True
+7,0,0.0,36.0,SE,296.0,Overdose/Poisoning,True
+7,0,0.0,36.0,SE,230.0,Medical Call Pd Requested,True
+7,0,0.0,190.0,SE,1.0,Traffic Stop,False
+7,0,0.0,36.0,SW,296.0,Foot Patrol,False
+7,0,0.0,190.0,SW,89.0,Alarm,False
+7,1,1.0,20.0,NW,125.0,Unconscious/Fainting,True
+7,1,1.0,20.0,NW,125.0,Unconscious/Fainting,True
+7,1,0.0,36.0,SW,296.0,Foot Patrol,False
+7,1,0.0,36.0,SE,348.0,Pick Up Partner,False
+7,1,unkown,90.0,Unknown,48.0,Sick Person,True
+7,1,unkown,90.0,Unknown,48.0,Sick Person,True
+7,1,1.0,90.0,NW,296.0,Fire Vehicle,False
+7,1,1.0,90.0,NW,348.0,Assist Police,False
+7,1,0.0,90.0,SW,89.0,Alarm,False
+7,2,0.0,90.0,SE,89.0,Noise Complaint,False
+7,2,0.0,190.0,NE,320.0,Fight,False
+7,2,unkown,190.0,Unknown,70.0,Disturbance/Domestic,False
+7,2,0.0,190.0,NE,348.0,Fire Electrical Check,False
+7,2,0.0,190.0,SE,89.0,Noise Complaint,False
+7,2,0.0,90.0,SE,89.0,Noise Complaint,False
+7,2,1.0,90.0,NW,125.0,Unconscious/Fainting,True
+7,2,1.0,90.0,NW,125.0,Unconscious/Fainting,True
+7,2,55.0,190.0,NW,89.0,Noise Complaint,False
+7,2,0.0,90.0,SW,155.0,Suspicious,False
+7,3,53.0,90.0,NE,230.0,Harassment / Threats Report,False
+7,3,0.0,20.0,NE,70.0,Disturbance/Domestic,False
+7,3,unkown,190.0,Unknown,320.0,Motorist Assist,False
+7,3,0.0,1.0,NE,179.0,Transfer/Interfacility,True
+7,3,55.0,190.0,NE,70.0,Disturbance/Domestic,False
+7,3,unkown,190.0,Unknown,179.0,Falls,True
+7,3,0.0,90.0,SW,155.0,Suspicious,False
+7,4,0.0,190.0,SE,89.0,Noise Complaint,False
+7,4,unkown,190.0,Unknown,141.0,Contact a Subject,False
+7,4,0.0,90.0,SW,89.0,Alarm,False
+7,4,1.0,90.0,SE,348.0,Fire Controlled Burn,False
+7,4,1.0,90.0,SE,155.0,Suspicious,False
+7,4,0.0,190.0,SW,260.0,Trespassing,False
+7,4,55.0,90.0,NE,230.0,Harassment / Threats Report,False
+7,5,0.0,190.0,NW,155.0,Suspicious,False
+7,6,51.0,90.0,SE,48.0,Sick Person,True
+7,6,51.0,90.0,SE,48.0,Sick Person,True
+7,6,0.0,190.0,NW,320.0,Debris in Roadway,False
+7,6,3.0,90.0,NE,48.0,Sick Person,True
+7,6,3.0,90.0,NE,48.0,Sick Person,True
+7,6,0.0,36.0,SE,348.0,911 Call Nature Unknown,False
+7,7,0.0,90.0,SE,48.0,Sick Person,True
+7,7,0.0,90.0,SE,48.0,Sick Person,True
+7,7,0.0,190.0,NW,230.0,Stand By EMS,True
+7,7,0.0,190.0,SW,89.0,Alarm,False
+7,7,3.0,190.0,NW,1.0,Traffic Stop,False
+7,7,unkown,190.0,Unknown,1.0,Traffic Stop,False
+7,7,0.0,190.0,SE,224.0,Animal at Large,False
+7,7,0.0,190.0,SE,141.0,Contact a Subject,False
+7,7,3.0,190.0,NW,1.0,Traffic Stop,False
+7,7,0.0,36.0,NW,1.0,Traffic Stop,False
+7,7,3.0,90.0,NW,141.0,Contact a Subject,False
+7,8,0.0,190.0,SE,296.0,Animal Dead,False
+7,8,unkown,36.0,Unknown,1.0,Traffic Stop,False
+7,8,unkown,190.0,Unknown,260.0,Animal Trapped,False
+7,8,0.0,190.0,SE,1.0,Traffic Stop,False
+7,8,unkown,190.0,Unknown,260.0,Follow Up,False
+7,8,0.0,1.0,NW,1.0,Traffic Stop,False
+7,8,0.0,190.0,SE,260.0,Follow Up,False
+7,8,0.0,190.0,NE,89.0,Alarm,False
+7,8,0.0,190.0,NE,230.0,MVA Non Injury,False
+7,8,0.0,1.0,NE,179.0,Transfer/Interfacility,True
+7,8,0.0,36.0,NW,1.0,Traffic Stop,False
+7,8,unkown,190.0,Unknown,260.0,Animal Trapped,False
+7,8,0.0,1.0,NW,1.0,Traffic Stop,False
+7,8,0.0,90.0,NE,168.0,Larceny,False
+7,8,0.0,190.0,NE,168.0,Larceny,False
+7,8,0.0,190.0,SE,1.0,Traffic Stop,False
+7,8,71.0,190.0,NW,1.0,Traffic Stop,False
+7,9,0.0,190.0,SW,230.0,Stand By EMS,True
+7,9,0.0,190.0,SE,89.0,Alarm,False
+7,9,0.0,1.0,NW,1.0,Traffic Stop,False
+7,9,73.0,190.0,NW,1.0,Traffic Stop,False
+7,9,0.0,190.0,NE,230.0,Check Area,False
+7,9,0.0,1.0,NW,1.0,Traffic Stop,False
+7,9,0.0,190.0,NE,1.0,Traffic Stop,False
+7,9,unkown,190.0,Unknown,260.0,Stolen Vehicle,False
+7,9,0.0,190.0,NE,1.0,Traffic Stop,False
+7,9,0.0,190.0,NE,296.0,Mutual Aid,False
+7,9,0.0,190.0,SW,230.0,Stand By EMS,True
+7,9,unkown,190.0,Unknown,141.0,Contact a Subject,False
+7,9,0.0,1.0,NW,1.0,Traffic Stop,False
+7,9,unkown,190.0,Unknown,89.0,Alarm,False
+7,9,0.0,190.0,SE,230.0,MVA Non Injury,False
+7,9,0.0,190.0,NW,179.0,Transfer/Interfacility,True
+7,9,unkown,90.0,Unknown,179.0,Traumatic Injury,True
+7,9,unkown,90.0,Unknown,179.0,Traumatic Injury,True
+7,9,3.0,36.0,SE,155.0,Suspicious,False
+7,9,0.0,36.0,NW,1.0,Traffic Stop,False
+7,9,0.0,190.0,SE,1.0,Traffic Stop,False
+7,9,0.0,36.0,NW,230.0,MVA With Injuries,True
+7,9,0.0,36.0,NW,230.0,MVA With Injuries,True
+7,9,0.0,36.0,NW,230.0,MVA With Injuries,True
+7,10,0.0,190.0,NW,89.0,Alarm,False
+7,10,0.0,90.0,NE,260.0,Follow Up,False
+7,10,0.0,190.0,SE,260.0,Animal Trapped,False
+7,10,51.0,190.0,NE,348.0,Supplement Report,False
+7,10,unkown,190.0,Unknown,89.0,Alarm,False
+7,10,0.0,20.0,NE,320.0,Indecent Exposure,False
+7,10,0.0,190.0,SW,348.0,Vandalism,False
+7,10,unkown,190.0,Unknown,230.0,Check Area,False
+7,10,0.0,190.0,NW,296.0,Animal Dead,False
+7,10,unkown,190.0,Unknown,348.0,COP Relationships,False
+7,10,0.0,190.0,NW,1.0,Traffic Stop,False
+7,10,53.0,15.0,NE,320.0,Unknown Problem/Man Down,True
+7,10,53.0,15.0,NE,320.0,Unknown Problem/Man Down,True
+7,10,53.0,15.0,NE,125.0,Unconscious/Fainting,True
+7,10,0.0,36.0,NW,179.0,Transfer/Interfacility,True
+7,10,0.0,36.0,SE,230.0,MVA With Injuries,True
+7,10,0.0,36.0,SE,230.0,MVA With Injuries,True
+7,10,0.0,36.0,SE,230.0,MVA Non Injury,True
+7,10,unkown,190.0,Unknown,320.0,Fraud,False
+7,10,0.0,90.0,NE,320.0,Indecent Exposure,False
+7,10,unkown,190.0,Unknown,320.0,Motorist Assist,False
+7,10,unkown,190.0,Unknown,89.0,Alarm,False
+7,11,0.0,190.0,SW,209.0,Public Assist,False
+7,11,0.0,190.0,NW,1.0,Traffic Stop,False
+7,11,0.0,190.0,SW,48.0,Sick Person,True
+7,11,unkown,90.0,Unknown,230.0,Medical Call Pd Requested,True
+7,11,unkown,90.0,Unknown,230.0,Medical Call Pd Requested,True
+7,11,0.0,90.0,SW,320.0,Stroke,True
+7,11,0.0,90.0,SW,320.0,Stroke,True
+7,11,0.0,20.0,NE,320.0,Breathing Problems,True
+7,11,0.0,20.0,NE,320.0,Breathing Problems,True
+7,11,0.0,1.0,NW,1.0,Traffic Stop,False
+7,11,3.0,190.0,NE,224.0,Animal at Large,False
+7,11,0.0,190.0,SE,70.0,Disturbance/Domestic,False
+7,11,0.0,1.0,NW,1.0,Traffic Stop,False
+7,11,3.0,190.0,NE,260.0,Trespassing,False
+7,11,0.0,190.0,NE,70.0,Disturbance/Domestic,False
+7,12,0.0,90.0,SE,209.0,Public Assist,False
+7,12,0.0,1.0,NE,179.0,Transfer/Interfacility,True
+7,12,3.0,190.0,NE,260.0,Parking Problem,False
+7,12,0.0,36.0,NE,168.0,Larceny,False
+7,12,0.0,90.0,NW,320.0,Open Door/Premises Check,False
+7,12,0.0,90.0,SE,320.0,Chest Pain,True
+7,12,0.0,90.0,SE,320.0,Chest Pain,True
+7,12,0.0,190.0,SE,70.0,Disturbance/Domestic,False
+7,12,unkown,190.0,Unknown,209.0,Public Assist,False
+7,12,unkown,90.0,Unknown,260.0,Heart Problems/AICD,True
+7,12,unkown,90.0,Unknown,260.0,Heart Problems/AICD,True
+7,12,0.0,190.0,SE,260.0,Stolen Vehicle,False
+7,13,53.0,90.0,NE,89.0,Noise Complaint,False
+7,13,0.0,90.0,NE,125.0,Unconscious/Fainting,True
+7,13,0.0,90.0,NE,125.0,Unconscious/Fainting,True
+7,13,0.0,190.0,NE,230.0,Harassment / Threats Report,False
+7,13,51.0,20.0,NW,260.0,Convulsion/Seizure,True
+7,13,51.0,20.0,NW,260.0,Convulsion/Seizure,True
+7,13,0.0,190.0,SW,141.0,Contact a Subject,False
+7,13,unkown,190.0,Unknown,70.0,Disturbance/Domestic,False
+7,13,unkown,190.0,Unknown,230.0,Harassment / Threats Report,False
+7,13,0.0,190.0,SE,89.0,Alarm,False
+7,13,53.0,90.0,NE,89.0,Noise Complaint,False
+7,13,0.0,90.0,SE,179.0,Traumatic Injury,True
+7,13,0.0,90.0,SE,179.0,Traumatic Injury,True
+7,13,0.0,190.0,SW,89.0,Alarm,False
+7,13,0.0,190.0,SW,1.0,Traffic Stop,False
+7,14,2.0,190.0,SE,70.0,Disturbance/Domestic,False
+7,14,2.0,36.0,SE,179.0,Falls,True
+7,14,2.0,36.0,SE,179.0,Falls,True
+7,14,0.0,90.0,SW,348.0,Allergies/Envenomations,True
+7,14,0.0,90.0,SW,48.0,Sick Person,True
+7,14,2.0,36.0,SE,179.0,Falls,True
+7,14,0.0,190.0,SW,1.0,Traffic Stop,False
+7,14,0.0,190.0,NE,224.0,Animal at Large,False
+7,14,1.0,90.0,SE,260.0,Heart Problems/AICD,True
+7,14,1.0,90.0,SE,260.0,Heart Problems/AICD,True
+7,14,0.0,190.0,NW,348.0,Hit and Run,False
+7,14,0.0,190.0,NW,296.0,Animal Vicious,False
+7,14,0.0,190.0,SE,168.0,Larceny,False
+7,14,0.0,36.0,SW,168.0,Larceny,False
+7,14,1.0,190.0,SW,1.0,Traffic Stop,False
+7,14,0.0,190.0,SW,1.0,Traffic Stop,False
+7,14,unkown,190.0,Unknown,1.0,Traffic Stop,False
+7,14,0.0,90.0,NE,141.0,Contact a Subject,False
+7,14,0.0,190.0,SE,260.0,Animal Trapped,False
+7,14,2.0,190.0,SE,320.0,Fire Smoke Investigation,False
+7,14,3.0,190.0,SE,296.0,Mutual Aid,False
+7,14,0.0,190.0,SE,70.0,Disturbance/Domestic,False
+7,14,0.0,190.0,NW,1.0,Traffic Stop,False
+7,14,0.0,190.0,NW,296.0,Drunk Driver,False
+7,14,0.0,20.0,NE,70.0,Disturbance/Domestic,False
+7,14,0.0,190.0,NE,260.0,Trespassing,False
+7,14,unkown,90.0,Unknown,1.0,Traffic Stop,False
+7,14,0.0,190.0,SE,348.0,Fire Grass,False
+7,14,0.0,90.0,NE,217.0,Welfare Check,False
+7,14,unkown,190.0,Unknown,296.0,Animal Dead,False
+7,14,unkown,190.0,Unknown,320.0,Animal Complaint,False
+7,14,0.0,190.0,NE,224.0,Animal at Large,False
+7,14,53.0,90.0,NE,48.0,Sick Person,True
+7,14,53.0,90.0,NE,48.0,Sick Person,True
+7,14,0.0,190.0,SE,1.0,Traffic Stop,False
+7,14,0.0,190.0,NE,224.0,Animal at Large,False
+7,14,0.0,36.0,NE,125.0,Unconscious/Fainting,True
+7,14,0.0,36.0,NE,125.0,Unconscious/Fainting,True
+7,15,0.0,1.0,NE,179.0,Transfer/Interfacility,True
+7,15,0.0,36.0,NW,179.0,Transfer/Interfacility,True
+7,15,75.0,36.0,NW,125.0,Unconscious/Fainting,True
+7,15,75.0,36.0,NW,125.0,Unconscious/Fainting,True
+7,15,75.0,36.0,NW,348.0,Body Reported,True
+7,15,0.0,90.0,NW,320.0,Open Door/Premises Check,False
+7,15,51.0,190.0,NE,89.0,Noise Complaint,False
+7,15,0.0,36.0,NE,48.0,Sick Person,True
+7,15,unkown,190.0,Unknown,296.0,Mutual Aid,False
+7,15,unkown,190.0,Unknown,70.0,Disturbance/Domestic,False
+7,15,1.0,190.0,SE,260.0,Parking Problem,False
+7,15,0.0,190.0,NW,1.0,Traffic Stop,False
+7,15,unkown,190.0,Unknown,89.0,Alarm,False
+7,15,0.0,190.0,NE,260.0,Parking Problem,False
+7,15,0.0,190.0,NW,1.0,Traffic Stop,False
+7,15,0.0,190.0,SE,348.0,Public Intoxication,False
+7,15,0.0,190.0,SW,141.0,Contact a Subject,False
+7,15,0.0,190.0,NW,1.0,Traffic Stop,False
+7,15,0.0,190.0,NW,155.0,Suspicious,False
+7,15,unkown,190.0,Unknown,89.0,Noise Complaint,False
+7,16,0.0,1.0,NE,179.0,Transfer/Interfacility,True
+7,16,2.0,36.0,NE,168.0,Larceny,False
+7,16,51.0,190.0,NE,296.0,Animal Vicious,False
+7,16,0.0,190.0,SE,1.0,Traffic Stop,False
+7,16,0.0,90.0,NE,48.0,Sick Person,True
+7,16,0.0,90.0,NE,48.0,Sick Person,True
+7,16,1.0,190.0,NE,1.0,Traffic Stop,False
+7,16,3.0,90.0,SE,179.0,Traumatic Injury,True
+7,16,3.0,90.0,SE,179.0,Traumatic Injury,True
+7,16,0.0,190.0,SE,89.0,Alarm,False
+7,16,0.0,190.0,SE,89.0,Noise Complaint,False
+7,16,unkown,190.0,Unknown,230.0,MVA Non Injury,False
+7,16,0.0,190.0,SE,141.0,Contact a Subject,False
+7,16,3.0,190.0,NE,217.0,Welfare Check,False
+7,16,0.0,90.0,NE,70.0,Disturbance/Domestic,False
+7,16,0.0,190.0,NE,348.0,Fire Alarm,False
+7,16,unkown,90.0,Unknown,89.0,Alarm,False
+7,16,0.0,190.0,NE,320.0,Burglary,False
+7,16,0.0,36.0,NW,179.0,Transfer/Interfacility,True
+7,16,0.0,20.0,NE,168.0,Larceny,False
+7,16,3.0,190.0,NE,320.0,Fraud,False
+7,16,0.0,190.0,SW,230.0,Check Area,False
+7,16,unkown,190.0,Unknown,168.0,Larceny,False
+7,17,3.0,190.0,NE,89.0,Noise Complaint,False
+7,17,unkown,190.0,Unknown,348.0,Road Rage,False
+7,17,0.0,190.0,SW,155.0,Suspicious,False
+7,17,0.0,190.0,SE,224.0,Animal at Large,False
+7,17,3.0,190.0,SE,141.0,Contact a Subject,False
+7,17,0.0,190.0,SE,217.0,Welfare Check,False
+7,17,0.0,190.0,SE,320.0,Animal Complaint,False
+7,17,63.0,15.0,NE,230.0,Stand By EMS,True
+7,17,3.0,36.0,NE,296.0,Aircraft Crash,True
+7,17,3.0,36.0,NE,296.0,Aircraft Crash,True
+7,17,3.0,36.0,NE,296.0,Aircraft Crash,True
+7,17,0.0,90.0,NW,179.0,Falls,True
+7,17,0.0,90.0,NW,179.0,Falls,True
+7,17,0.0,90.0,SW,179.0,Traumatic Injury,True
+7,17,0.0,90.0,SW,179.0,Traumatic Injury,True
+7,17,1.0,190.0,SE,70.0,Disturbance/Domestic,False
+7,17,3.0,90.0,SE,48.0,Sick Person,True
+7,17,3.0,90.0,SE,48.0,Sick Person,True
+7,17,unkown,190.0,Unknown,217.0,Welfare Check,False
+7,17,unkown,90.0,Unknown,260.0,Back Pain,True
+7,17,unkown,90.0,Unknown,260.0,Back Pain,True
+7,17,1.0,90.0,SE,260.0,Diabetic Problems,True
+7,17,1.0,90.0,SE,260.0,Diabetic Problems,True
+7,18,51.0,190.0,NW,296.0,Drunk Driver,False
+7,18,unkown,190.0,Unknown,1.0,Traffic Stop,False
+7,18,0.0,20.0,NE,209.0,Public Assist,False
+7,18,3.0,90.0,SE,260.0,Convulsion/Seizure,True
+7,18,3.0,90.0,SE,260.0,Convulsion/Seizure,True
+7,18,0.0,20.0,NE,209.0,Public Assist,False
+7,18,0.0,190.0,SE,48.0,Sick Person,True
+7,18,0.0,36.0,SE,209.0,Public Assist,False
+7,18,0.0,190.0,SW,1.0,Traffic Stop,False
+7,18,0.0,190.0,SE,217.0,Welfare Check,False
+7,18,0.0,190.0,SE,1.0,Traffic Stop,False
+7,18,51.0,90.0,NE,70.0,Disturbance/Domestic,False
+7,18,0.0,190.0,SW,320.0,Burglary,False
+7,18,0.0,190.0,SE,260.0,Parking Problem,False
+7,18,0.0,36.0,SE,260.0,Back Pain,True
+7,18,0.0,36.0,SE,260.0,Back Pain,True
+7,18,51.0,190.0,SE,1.0,Traffic Stop,False
+7,18,3.0,36.0,NE,168.0,Larceny,False
+7,18,3.0,36.0,NE,320.0,Fire Water Rescue,True
+7,18,3.0,36.0,NE,320.0,Fire Water Rescue,True
+7,18,3.0,36.0,NE,348.0,Drowning/Diving/Scuba Accident,True
+7,19,unkown,90.0,Unknown,89.0,Alarm,False
+7,19,0.0,190.0,SE,89.0,Alarm,False
+7,19,unkown,190.0,Unknown,348.0,Animal Livestock,False
+7,19,unkown,190.0,Unknown,70.0,Disturbance/Domestic,False
+7,19,0.0,20.0,NW,179.0,Falls,True
+7,19,0.0,20.0,NW,179.0,Falls,True
+7,19,0.0,90.0,SW,179.0,Traumatic Injury,True
+7,19,0.0,90.0,SW,179.0,Traumatic Injury,True
+7,19,0.0,90.0,NW,179.0,Falls,True
+7,19,0.0,90.0,NW,179.0,Falls,True
+7,19,0.0,90.0,SE,125.0,Unconscious/Fainting,True
+7,19,0.0,90.0,SE,125.0,Unconscious/Fainting,True
+7,19,51.0,90.0,NE,141.0,Contact a Subject,False
+7,19,0.0,190.0,NW,348.0,Reckless Driving,False
+7,20,0.0,190.0,SW,89.0,Noise Complaint,False
+7,20,0.0,190.0,NE,296.0,Animal Vicious,False
+7,20,unkown,190.0,Unknown,230.0,Harassment / Threats Report,False
+7,20,53.0,90.0,NE,48.0,Sick Person,True
+7,20,53.0,90.0,NE,48.0,Sick Person,True
+7,20,61.0,90.0,NE,230.0,Medical Call Pd Requested,True
+7,20,61.0,90.0,NE,230.0,Medical Call Pd Requested,True
+7,20,unkown,190.0,Unknown,348.0,Fire Odor Investigation,False
+7,20,0.0,90.0,SE,209.0,Public Assist,False
+7,20,0.0,190.0,SE,1.0,Traffic Stop,False
+7,20,unkown,190.0,Unknown,320.0,Fire Smoke Investigation,False
+7,20,unkown,190.0,Unknown,296.0,Drunk Driver,False
+7,20,2.0,90.0,SE,260.0,Diabetic Problems,True
+7,20,2.0,90.0,SE,260.0,Diabetic Problems,True
+7,20,unkown,190.0,Unknown,348.0,Fireworks,False
+7,20,1.0,190.0,SW,260.0,Follow Up,False
+7,20,0.0,1.0,NE,348.0,Escort/Transport,False
+7,20,unkown,190.0,Unknown,348.0,Animal Injured,False
+7,20,0.0,190.0,SW,230.0,Check Area,False
+7,20,0.0,190.0,NE,209.0,Public Assist,False
+7,21,3.0,190.0,NE,168.0,Larceny,False
+7,21,unkown,190.0,Unknown,89.0,Noise Complaint,False
+7,21,unkown,90.0,Unknown,89.0,Noise Complaint,False
+7,21,0.0,190.0,SE,155.0,Suspicious,False
+7,21,unkown,190.0,Unknown,1.0,Traffic Stop,False
+7,21,0.0,90.0,SE,89.0,Noise Complaint,False
+7,21,0.0,20.0,NW,48.0,Sick Person,True
+7,21,0.0,20.0,NW,48.0,Sick Person,True
+7,21,unkown,190.0,Unknown,260.0,Stolen Vehicle,False
+7,21,1.0,36.0,SW,260.0,Stolen Vehicle,False
+7,21,0.0,190.0,NE,70.0,Disturbance/Domestic,False
+7,21,unkown,190.0,Unknown,230.0,Check Area,False
+7,21,unkown,90.0,Unknown,296.0,Fire Vehicle,False
+7,21,unkown,90.0,Unknown,296.0,Fire Vehicle,False
+7,21,0.0,190.0,SW,141.0,Contact a Subject,False
+7,21,1.0,36.0,SW,141.0,Contact a Subject,False
+7,21,2.0,190.0,SE,1.0,Traffic Stop,False
+7,21,51.0,36.0,NE,217.0,Welfare Check,False
+7,21,51.0,36.0,NE,125.0,Unconscious/Fainting,True
+7,21,51.0,36.0,NE,125.0,Unconscious/Fainting,True
+7,21,0.0,190.0,SW,230.0,MVA Non Injury,False
+7,22,unkown,190.0,Unknown,1.0,Traffic Stop,False
+7,22,1.0,90.0,SE,320.0,Fight,False
+7,22,1.0,90.0,SE,260.0,Trespassing,False
+7,22,1.0,190.0,SE,1.0,Traffic Stop,False
+7,22,1.0,90.0,SE,70.0,Disturbance/Domestic,False
+7,22,1.0,190.0,SW,89.0,Alarm,False
+7,22,unkown,90.0,Unknown,320.0,Debris in Roadway,False
+7,22,51.0,15.0,NE,230.0,Stand By EMS,True
+7,22,1.0,36.0,SW,296.0,Foot Patrol,False
+7,22,1.0,190.0,SE,1.0,Traffic Stop,False
+7,22,unkown,36.0,Unknown,296.0,Overdose/Poisoning,True
+7,22,unkown,36.0,Unknown,296.0,Overdose/Poisoning,True
+7,22,1.0,190.0,NW,348.0,Barking Dog,False
+7,22,1.0,190.0,NW,155.0,Suspicious,False
+7,22,1.0,90.0,SE,89.0,Noise Complaint,False
+7,22,unkown,36.0,Unknown,217.0,Welfare Check,False
+7,22,unkown,36.0,Unknown,155.0,Suspicious,False
+7,22,1.0,190.0,NW,155.0,Suspicious,False
+7,22,unkown,36.0,Unknown,155.0,Suspicious,False
+7,23,3.0,190.0,NW,348.0,Loud Party,False
+7,23,1.0,1.0,NE,179.0,Transfer/Interfacility,True
+7,23,1.0,90.0,SE,89.0,Noise Complaint,False
+7,23,1.0,190.0,NW,155.0,Suspicious,False
+7,23,0.0,190.0,NE,70.0,Disturbance/Domestic,False
+7,23,unkown,90.0,Unknown,89.0,Noise Complaint,False
+7,23,1.0,190.0,SW,70.0,Disturbance/Domestic,False
+7,23,1.0,190.0,NW,141.0,Contact a Subject,False
