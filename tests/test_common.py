@@ -113,7 +113,7 @@ def test_incident_rank():
     """
     Test case for the incident_rank function.
 
-    This test case verifies that the incident_rank function correctly assigns a rank to each Nature based on the frequency of the Nature in the dataset.    """
+    This test case verifies that the incident_rank function correctly assigns a rank to each Nature based on the frequency of the Nature in the dataset."""
 
     df = pd.DataFrame(['A', 'A', 'A', 'B', 'B', 'C'], columns = ['nature'])
     df_out = incident_rank(df)
