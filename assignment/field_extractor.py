@@ -9,10 +9,20 @@ from retry_requests import retry
 from datetime import timedelta, datetime
 from tqdm import tqdm
 
+import pandas as pd
+
 def day_of_week(df):
+    """
+    Extracts the day of the week from the 'incident_time' column in the given DataFrame and returns the modified DataFrame.
 
-    df['Day of the Week'] = pd.to_datetime(df['incident_time'], format = '%m/%d/%Y %H:%M' ).dt.day_name()
+    Parameters:
+    - df (pandas.DataFrame): The input DataFrame containing the 'incident_time' column.
 
+    Returns:
+    - pandas.DataFrame: The modified DataFrame with an additional column 'Day of the Week' containing the corresponding day of the week as a numerical value.
+    """
+
+    df['Day of the Week'] = pd.to_datetime(df['incident_time'], format='%m/%d/%Y %H:%M').dt.day_name()
     dict_week_day_to_num = {
         'Sunday': 1,
         'Monday': 2,
@@ -28,21 +38,52 @@ def day_of_week(df):
     return df
 
 def time_of_day(df):
+    """
+    Extracts the hour of the day from the 'incident_time' column in the given DataFrame.
 
+    Args:
+        df (pandas.DataFrame): The DataFrame containing the 'incident_time' column.
+
+    Returns:
+        pandas.DataFrame: The DataFrame with an additional column 'Time of Day' containing the hour of the day.
+
+    """
     df['Time of Day'] = pd.to_datetime(df['incident_time'], format = '%m/%d/%Y %H:%M' ).dt.hour
     return df
 
+
+
 def location_rank(df):
+    """
+    Calculates the location rank based on the frequency of incident locations in the given DataFrame.
+
+    Args:
+        df (pandas.DataFrame): The DataFrame containing the incident data.
+
+    Returns:
+        pandas.DataFrame: The DataFrame with an additional column 'Location Rank' representing the rank of each location based on frequency.
+    """
 
     dict_location_freq = df['incident_location'].value_counts().to_dict()
     df['location_freq'] = df['incident_location'].apply(lambda x: dict_location_freq[x])
     df['Location Rank'] = df['location_freq'].rank( method = 'min' ,ascending = False)
 
-    #print(df[df['incident_location'] == '901 N PORTER AVE'])
-
     return df
 
+
+    ...
 def geo_codes(df):
+
+    """
+    Retrieves and stores geocodes for incident locations in a DataFrame.
+
+    Args:
+        df (pandas.DataFrame): The DataFrame containing incident data.
+
+    Returns:
+        pandas.DataFrame: The DataFrame with an additional 'geocodes' column containing the geocodes for each incident location.
+
+    """
 
     if os.path.exists('resources/coordinates.pkl'):
         dict_cache_coordinates = unpickle_object('resources/coordinates.pkl')
@@ -63,6 +104,15 @@ def geo_codes(df):
 
 def incident_rank(df):
 
+    """
+    calculates the incident rank based on the frequency of incident nature in the given DataFrame.
+
+    Args:
+        df (pandas.DataFrame): The DataFrame containing the incident data.
+    Returns:
+        pandas.DataFrame: The DataFrame with an additional column 'Incident Rank' representing the rank of each incident nature based on frequency.
+    """
+
     dict_nature_freq = df['nature'].value_counts().to_dict()
     df['nature_freq'] = df['nature'].apply(lambda x: dict_nature_freq[x])
     df['Incident Rank'] = df['nature_freq'].rank( method = 'min' ,ascending = False)
@@ -70,6 +120,19 @@ def incident_rank(df):
     return df
 
 def emstat_flg(df):
+
+    """
+    Sets the 'EMSSTAT' flag to True for rows in the DataFrame where the 'incident_ori' column is 'EMSSTAT'.
+    Additionally, it checks for records above and below each flagged row with matching incident time and location,
+    and sets the 'EMSSTAT' flag to True for those records as well.
+
+    Args:
+        df (pandas.DataFrame): The input DataFrame containing the 'incident_ori', 'incident_time', and 'incident_location' columns.
+
+    Returns:
+        pandas.DataFrame: The modified DataFrame with the 'EMSSTAT' flag updated.
+
+    """
         
     df['EMSSTAT'] = False
     df['EMSSTAT'] = df['incident_ori'].apply(lambda x: True if x == 'EMSSTAT' else False)
@@ -101,6 +164,10 @@ def emstat_flg(df):
 
 class WeatherInfo:
 
+    """
+    class to get weather information for a given location and time
+    """
+
     def __init__(self):
 
         if os.path.exists('resources/weather.pkl'):
@@ -110,6 +177,27 @@ class WeatherInfo:
 
 
     def get_weather_info(slef, coordinates, start_date, end_date):
+
+        """
+        Retrieves hourly weather information for a given location and time range.
+
+        Args:
+            coordinates (list): A list containing the latitude and longitude of the location.
+            start_date (str): The start date of the time range in the format 'YYYY-MM-DD'.
+            end_date (str): The end date of the time range in the format 'YYYY-MM-DD'.
+
+        Returns:
+            pandas.DataFrame: A DataFrame containing the hourly weather information, including the date and weather code.
+
+        Raises:
+            None
+
+        Example:
+            coordinates = [37.7749, -122.4194]
+            start_date = '2022-01-01'
+            end_date = '2022-01-31'
+            weather_info = get_weather_info(coordinates, start_date, end_date)
+        """
 
         cache_session = requests_cache.CachedSession('.cache', expire_after = -1)
         retry_session = retry(cache_session, retries = 5, backoff_factor = 0.2)
@@ -146,6 +234,21 @@ class WeatherInfo:
 
     def get_weather_code(self, coordinates, timestamp):
 
+        """
+        Retrieves the weather code for a given set of coordinates and timestamp.
+
+        Parameters:
+        - coordinates (tuple): A tuple containing the latitude and longitude coordinates.
+        - timestamp (datetime): The timestamp for which the weather code is requested.
+
+        Returns:
+        - weather_code (str): The weather code corresponding to the given coordinates and timestamp.
+
+        Note:
+        - If the coordinates are (-1000, -1000), the function returns 'unknown'.
+        - The weather code is retrieved from a dictionary cache if available, otherwise it is fetched from an external source.
+        """
+
         if coordinates[0] == -1000:
             return 'unkown'
 
@@ -178,6 +281,17 @@ class WeatherInfo:
 
 def extract_feilds(df):
 
+    """
+    Extracts various fields from the input DataFrame and returns a modified DataFrame.
+
+    Parameters:
+    df (pandas.DataFrame): The input DataFrame containing the data to be processed.
+
+    Returns:
+    pandas.DataFrame: The modified DataFrame with additional fields extracted.
+
+    """
+    
     #day of week extraction
     df = day_of_week(df)
 

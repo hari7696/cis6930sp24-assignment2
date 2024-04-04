@@ -133,6 +133,17 @@ def unpickle_object(file_path):
     return obj
 
 def get_coordinates(address, geolocator):
+
+    """Get the latitude and longitude coordinates for a given address using a geolocator.
+
+    Args:
+        address (str): The address to geocode.
+        geolocator: The geolocator object used for geocoding.
+
+    Returns:
+        tuple: A tuple containing the latitude and longitude coordinates of the address.
+    """    
+
     location = geolocator.geocode(address, timeout = 10)
     if location is None:
         logger.error("Location not found for address {}".format(address))
@@ -141,6 +152,9 @@ def get_coordinates(address, geolocator):
 
 def determine_side_of_town(coord):
 
+    """Determine the side of town based on the latitude and longitude coordinates."""
+
+    # Center of Norman, OK
     center_lat = 35.220833
     center_lon = -97.443611
 
