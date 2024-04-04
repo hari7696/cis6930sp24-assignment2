@@ -20,13 +20,14 @@ Other fields like 'Side of Town' and 'Day of the Week' rely on these geocoding, 
 
 ### Environment setup
 Run the follwing pipenv command to create the required environment
-`pipenv install`
+
+```pipenv install```
 
 ### How to run
 
-pipenv install
+```pipenv install```
 
-pipenv run python assignment0/main.py --incidents https://www.normanok.gov/sites/#### ult/files/documents/2024-03/2024-03-01_daily_incident_summary.pdf
+```pipenv run python assignment0/main.py --incidents https://www.normanok.gov/sites/#### ult/files/documents/2024-03/2024-03-01_daily_incident_summary.pdf```
 
 
 ### Test cases run
@@ -285,4 +286,12 @@ Determine the side of town based on the latitude and longitude coordinate
 #### test_weather_info():
 
     Test case for the WeatherInfo class.
-    It hits the weather api and returns the weather code for the given location and tim
+    It hits the weather api and returns the weather code for the given location and time
+
+## Bugs and Assumption
+1. Bugs: the code uses two apis, open meteo and google geocoding api. if the api calls limit or rate exceeds, the code may fail to run
+2. Extracting data pdf is really complicated, so if the structure of the changes from the given incident file, the behaviour od the code can be unpredicatable, it may even break
+3. For the expected outcome, its assumed that the structure of the pdf file remains same as given in assignment
+4. Assumption: The code should have write access to the resources directory
+5. Asuumption: the first 2 rows of the pdf is junk data, so it gets removed everytime
+6. The last row of the pdf have a time stamp, so its ignroed as junk value
