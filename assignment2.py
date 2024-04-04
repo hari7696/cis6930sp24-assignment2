@@ -6,11 +6,10 @@ import sys
 
 def main(file):
     """
-    Downloads a PDF file from the given URL, parses it, creates a database, populates the database with data from the PDF,
-    executes a query on the database, and prints the query results.
+    Downloads and parses PDF files from a list of URLs, extracts fields, and writes the results to stdout.
 
     Parameters:
-    url (str): The URL of the PDF file to download.
+    - file (str): The path to the CSV file containing the list of URLs.
 
     Returns:
     None
