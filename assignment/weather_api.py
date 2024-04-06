@@ -5,6 +5,7 @@ import pandas as pd
 import requests_cache
 from retry_requests import retry
 import openmeteo_requests
+import requests
 
 class WeatherInfo:
 
@@ -53,8 +54,7 @@ class WeatherInfo:
             weather_info = get_weather_info(coordinates, start_date, end_date)
         """
 
-        cache_session = requests_cache.CachedSession('.cache', expire_after=-1)
-        retry_session = retry(cache_session, retries=5, backoff_factor=0.2)
+        retry_session = retry(requests.Session(), retries=5, backoff_factor=0.2)
         openmeteo = openmeteo_requests.Client(session=retry_session)
 
         url = "https://archive-api.open-meteo.com/v1/archive"
