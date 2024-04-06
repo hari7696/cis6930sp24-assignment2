@@ -1,15 +1,11 @@
 from geopy.geocoders import GoogleV3
 import pandas as pd
 from assignment.utilities import determine_side_of_town, unpickle_object, pickle_object, get_coordinates
+from assignment.weather_api import WeatherInfo
 import os
-import openmeteo_requests
-import requests_cache
 import pandas as pd
-from retry_requests import retry
-from datetime import timedelta, datetime
-from tqdm import tqdm
-
 import pandas as pd
+import os
 
 def day_of_week(df):
     """
@@ -162,122 +158,6 @@ def emstat_flg(df):
 
     return df
 
-class WeatherInfo:
-
-    """
-    class to get weather information for a given location and time
-    """
-
-    def __init__(self):
-
-        if os.path.exists('resources/weather.pkl'):
-            self.dict_weather = unpickle_object('resources/weather.pkl')
-        else:
-            self.dict_weather = {}
-
-
-    def get_weather_info(slef, coordinates, start_date, end_date):
-
-        """
-        Retrieves hourly weather information for a given location and time range.
-
-        Args:
-            coordinates (list): A list containing the latitude and longitude of the location.
-            start_date (str): The start date of the time range in the format 'YYYY-MM-DD'.
-            end_date (str): The end date of the time range in the format 'YYYY-MM-DD'.
-
-        Returns:
-            pandas.DataFrame: A DataFrame containing the hourly weather information, including the date and weather code.
-
-        Raises:
-            None
-
-        Example:
-            coordinates = [37.7749, -122.4194]
-            start_date = '2022-01-01'
-            end_date = '2022-01-31'
-            weather_info = get_weather_info(coordinates, start_date, end_date)
-        """
-
-        cache_session = requests_cache.CachedSession('.cache', expire_after = -1)
-        retry_session = retry(cache_session, retries = 5, backoff_factor = 0.2)
-        openmeteo = openmeteo_requests.Client(session = retry_session)
-
-        url = "https://archive-api.open-meteo.com/v1/archive"
-        params = {
-            "latitude": coordinates[0],
-            "longitude": coordinates[1],
-            "start_date": start_date,
-            "end_date": end_date,
-            "hourly": "weather_code",
-            "timezone": "America/Chicago"
-        }
-        responses = openmeteo.weather_api(url, params=params)
-
-        # Process first location. Add a for-loop for multiple locations or weather models
-        response = responses[0]
-        # Process hourly data. The order of variables needs to be the same as requested.
-        hourly = response.Hourly()
-        hourly_weather_code = hourly.Variables(0).ValuesAsNumpy()
-
-        hourly_data = {"date": pd.date_range(
-            start = pd.to_datetime(hourly.Time(), unit = "s", utc = True),
-            end = pd.to_datetime(hourly.TimeEnd(), unit = "s", utc = True),
-            freq = pd.Timedelta(seconds = hourly.Interval()),
-            inclusive = "left"
-        )}
-        hourly_data["weather_code"] = hourly_weather_code
-        hourly_dataframe = pd.DataFrame(data = hourly_data).dropna()
-        hourly_dataframe['date'] = hourly_dataframe['date'].dt.strftime('%Y-%m-%d %H')
-
-        return hourly_dataframe
-
-    def get_weather_code(self, coordinates, timestamp):
-
-        """
-        Retrieves the weather code for a given set of coordinates and timestamp.
-
-        Parameters:
-        - coordinates (tuple): A tuple containing the latitude and longitude coordinates.
-        - timestamp (datetime): The timestamp for which the weather code is requested.
-
-        Returns:
-        - weather_code (str): The weather code corresponding to the given coordinates and timestamp.
-
-        Note:
-        - If the coordinates are (-1000, -1000), the function returns 'unknown'.
-        - The weather code is retrieved from a dictionary cache if available, otherwise it is fetched from an external source.
-        """
-
-        if coordinates[0] == -1000:
-            return 'unkown'
-
-        min_date = timestamp - timedelta(days = 180)
-        max_date = datetime.now()
-        #timestamp = timestamp.strftime('%Y-%m-%d %H')
-        timestamp_str = timestamp.strftime('%Y-%m-%d %H')
-
-        min_date_str = min_date.strftime('%Y-%m-%d')
-        max_date_str = max_date.strftime('%Y-%m-%d')
-
-        key = "{}_{}".format(coordinates[0], coordinates[1])
-        
-    
-        if key in self.dict_weather:
-            temp_df = self.dict_weather[key]
-            weather_code = temp_df[temp_df['date'] == timestamp_str]['weather_code'].values[0]
-
-        else:
-            temp_df = self.get_weather_info(coordinates, min_date_str, max_date_str)
-            self.dict_weather[key] = temp_df
-            weather_code = temp_df[temp_df['date'] == timestamp_str]['weather_code'].values[0]
-
-        return weather_code    
-    
-    def save_weather_info(self):
-        pickle_object(self.dict_weather, 'resources/weather.pkl')
-
-
 
 def extract_feilds(df):
 
@@ -320,9 +200,9 @@ def extract_feilds(df):
 
     for index, row in df.iterrows():#tqdm(df.iterrows(), total=df.shape[0], desc='Processing Weather'):
         df.at[index, 'Weather'] = weather_obj.get_weather_code(row['geocodes'], row['incident_time'])
-    weather_obj.save_weather_info()
+    weather_obj.close_connection()
 
-    df.to_csv("final_out.csv", index = False)
+    #df.to_csv("final_out.csv", index = False)
 
     df = df[['Day of the Week', 'Time of Day', 'Weather', 'Location Rank', 'Side of Town', 'Incident Rank', 'Nature', 'EMSSTAT']]
 

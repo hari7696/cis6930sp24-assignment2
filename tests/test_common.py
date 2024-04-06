@@ -7,7 +7,8 @@ sys.path.append(
 )
 
 from assignment.utilities import download_pdf, split_line_regex, pdf_parser
-from assignment.field_extractor import day_of_week, time_of_day, location_rank, geo_codes, incident_rank, emstat_flg, WeatherInfo
+from assignment.field_extractor import day_of_week, time_of_day, location_rank, geo_codes, incident_rank, emstat_flg
+from assignment.weather_api import WeatherInfo
 
 
 # def test_download_pdf_and_pdf_parser():
@@ -144,4 +145,4 @@ def test_weather_info():
     It hits the weather api and returns the weather code for the given location and time."""
 
     weather_obj = WeatherInfo()
-    assert weather_obj.get_weather_code((35.1816, -97.4143), pd.to_datetime('2024-03-01 12')) == 0
+    assert weather_obj.get_weather_code((35.1816, -97.4143), pd.to_datetime('2024-03-01 12')) == '0'
