@@ -110,7 +110,7 @@ The test doesnt need any explicit inputs, running following pipenv command run t
 
 
 
-#### get_weather_info():
+#### populate_weather_info():
 
     Retrieves hourly weather information for a given location and time range.
 
@@ -131,7 +131,7 @@ The test doesnt need any explicit inputs, running following pipenv command run t
         end_date = '2022-01-31'
         weather_info = get_weather_info(coordinates, start_date, end_date)
 
-#### get_weather_code():
+#### get_weather_from_sqlite():
 
     Retrieves the weather code for a given set of coordinates and timestamp.
 
@@ -144,7 +144,24 @@ The test doesnt need any explicit inputs, running following pipenv command run t
 
     Note:
     - If the coordinates are (-1000, -1000), the function returns 'unknown'.
-    - The weather code is retrieved from a dictionary cache if available, otherwise it is fetched from an external source.
+    - The weather code is retrieved from the database if available, otherwise it is fetched from an external source.
+
+#### get_weather_code()
+
+    Retrieves the weather code for a given set of coordinates and timestamp.
+
+    Parameters:
+    - coordinates (tuple): A tuple containing the latitude and longitude coordinates.
+    - timestamp (datetime): The timestamp for which the weather code is requested.
+
+    Returns:
+    - weather_code (str): The weather code corresponding to the given coordinates and timestamp.
+
+    Note:
+    - If the coordinates are (-1000, -1000), the function returns 'unknown'.
+    - The weather code is retrieved from the database if available, otherwise it is fetched from an external source.
+        
+            
 
 
 #### extract_feilds():

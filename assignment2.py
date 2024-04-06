@@ -64,3 +64,5 @@ if __name__ == "__main__":
 
 
 # run command: pipenv run python assignment0/main.py --incidents "https://www.normanok.gov/sites/default/files/documents/2024-03/2024-03-01_daily_incident_summary.pdf"
+#https://www.normanok.gov/sites/default/files/documents/2024-03/2024-03-02_daily_incident_summary.pdf
+# pipenv run python .\assignment2.py --urls files.csv
