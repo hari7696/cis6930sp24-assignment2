@@ -27,7 +27,13 @@ Run the follwing pipenv command to create the required environment
 
 ```pipenv install```
 
-```pipenv run python assignment0/main.py --incidents https://www.normanok.gov/sites/#### ult/files/documents/2024-03/2024-03-01_daily_incident_summary.pdf```
+```pipenv run python .\assignment2.py --urls files.csv```
+
+
+
+
+https://github.com/hari7696/cis6930sp24-assignment2/assets/148893192/40dbd0fc-48a3-4ded-bb48-2d5eeb72af8b
+
 
 
 ### Test cases run
