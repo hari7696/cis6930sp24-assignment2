@@ -143,7 +143,9 @@ def get_coordinates(address, geolocator):
     Returns:
         tuple: A tuple containing the latitude and longitude coordinates of the address.
     """    
-
+    if address is None or address == '' or address == ' ' or address == 'nan' or address == 'NaN' or address == 'NAN':
+        return ( -1000, -1000)
+    
     location = geolocator.geocode(address, timeout = 10)
     if location is None:
         logger.error("Location not found for address {}".format(address))
