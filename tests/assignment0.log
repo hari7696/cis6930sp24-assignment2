@@ -1,11 +1,11 @@
-04/08/2024 12:45:19 - assignment.utilities - INFO - Downloaded the PDF file
-04/08/2024 12:45:19 - root - INFO - Downloaded the pdf file
-04/08/2024 12:45:19 - assignment.utilities - INFO - Read the pdf byte stream
-04/08/2024 12:45:19 - assignment.utilities - DEBUG - number of pages in the pdf 20
-04/08/2024 12:45:20 - assignment.utilities - DEBUG - JUNK line ['', '3/2/2024 10:25']
-04/08/2024 12:45:20 - assignment.utilities - DEBUG - lines ['3/1/2024 0:05', '2024-00014834', '4TH/SUNNYLANE', 'MVA Non Injury', 'OK0140200']
-04/08/2024 12:45:20 - assignment.utilities - DEBUG - Number of records in dataframe 326
-04/08/2024 12:45:20 - root - INFO - Parsed the pdf file , (326, 6), url: https://www.normanok.gov/sites/default/files/documents/2024-03/2024-03-01_daily_incident_summary.pdf
-04/08/2024 12:45:20 - urllib3.util.retry - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
-04/08/2024 12:45:20 - urllib3.util.retry - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
-04/08/2024 12:45:26 - root - INFO - Extracted the fields from pdf file , (326, 8), url: https://www.normanok.gov/sites/default/files/documents/2024-03/2024-03-01_daily_incident_summary.pdf
+04/08/2024 17:23:24 - assignment.utilities - INFO - Downloaded the PDF file
+04/08/2024 17:23:24 - root - INFO - Downloaded the pdf file
+04/08/2024 17:23:24 - assignment.utilities - INFO - Read the pdf byte stream
+04/08/2024 17:23:24 - assignment.utilities - DEBUG - number of pages in the pdf 20
+04/08/2024 17:23:25 - assignment.utilities - DEBUG - JUNK line ['', '3/2/2024 10:25']
+04/08/2024 17:23:25 - assignment.utilities - DEBUG - lines ['3/1/2024 0:05', '2024-00014834', '4TH/SUNNYLANE', 'MVA Non Injury', 'OK0140200']
+04/08/2024 17:23:25 - assignment.utilities - DEBUG - Number of records in dataframe 326
+04/08/2024 17:23:25 - root - INFO - Parsed the pdf file , (326, 6), url: https://www.normanok.gov/sites/default/files/documents/2024-03/2024-03-01_daily_incident_summary.pdf
+04/08/2024 17:23:25 - urllib3.util.retry - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+04/08/2024 17:23:25 - urllib3.util.retry - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+04/08/2024 17:23:31 - root - INFO - Extracted the fields from pdf file , (326, 8), url: https://www.normanok.gov/sites/default/files/documents/2024-03/2024-03-01_daily_incident_summary.pdf

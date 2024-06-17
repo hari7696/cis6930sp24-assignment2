@@ -86,7 +86,7 @@ def geo_codes(df):
     else:
         dict_cache_coordinates = {}
     
-    geolocator = GoogleV3(api_key = "***REMOVED***")
+    geolocator = GoogleV3(api_key = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx")
     for address in df['incident_location'].unique():#tqdm(df['incident_location'].unique(), total = len(df['incident_location'].unique()), desc='Processing Coordinates'):
         if address not in dict_cache_coordinates:
             dict_cache_coordinates[address] = get_coordinates(address, geolocator)
